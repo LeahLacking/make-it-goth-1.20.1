@@ -2,20 +2,25 @@ package net.leah.makeitgoth;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.leah.makeitgoth.block.ModBlocks;
+import net.leah.makeitgoth.effect.ModEffects;
+import net.leah.makeitgoth.item.ModItemGroups;
+import net.leah.makeitgoth.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class MakeItGoth implements ModInitializer {
-	// This logger is used to write text to the console and the log file.
-	// It is considered best practice to use your mod id as the logger's name.
-	// That way, it's clear which mod wrote info, warnings, and errors.
-    public static final Logger LOGGER = LoggerFactory.getLogger("makeitgoth");
+	public static final String MOD_ID = "makeitgoth";
+    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	@Override
 	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
+		ModItemGroups.registerItemGroups();
+		ModItems.registerModItems();
+		ModBlocks.registerModBlock();
+		ModEffects.registerModEffects();
+
+
 
 		LOGGER.info("Hello Fabric world!");
 	}

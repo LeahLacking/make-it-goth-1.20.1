@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "makeitgoth:block/rotwood_slab"
+    },
+    "type=double": {
+      "model": "makeitgoth:block/rotwood_planks"
+    },
+    "type=top": {
+      "model": "makeitgoth:block/rotwood_slab_top"
+    }
+  }
+}

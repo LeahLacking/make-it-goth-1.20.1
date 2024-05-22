@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "makeitgoth:block/rotwood_log",
+    "side": "makeitgoth:block/rotwood_log"
+  }
+}

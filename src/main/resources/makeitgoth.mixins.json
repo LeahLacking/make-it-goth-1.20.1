@@ -3,7 +3,14 @@
 	"package": "net.leah.makeitgoth.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+	],
+	"client": [
+		"WheelSawItemRendererAccessor",
+		"WheelSawItemRendererMixin",
+		"WheelsawModelLoaderMixin",
+		"RifleHalberdItemRendererAccessor",
+		"RifleHalberdItemRendererMixin",
+		"RifleHalberdModelLoaderMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
