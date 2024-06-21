@@ -1,9 +1,9 @@
 {
   "ambientocclusion": false,
   "textures": {
-    "particle": "makeitgoth:textures/block/steel_bars_tip",
-    "bars": "makeitgoth:textures/block/steel_bars_tip",
-    "edge": "makeitgoth:textures/block/steel_bars_tip"
+    "particle": "makeitgoth:block/steel_bars_tip",
+    "bars": "makeitgoth:block/steel_bars_tip",
+    "edge": "makeitgoth:block/steel_bars_tip"
   },
   "elements": [
     {   "from": [ 8, 0, 7 ],
