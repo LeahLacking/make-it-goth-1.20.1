@@ -15,7 +15,10 @@ public class BleedItem extends AxeItem {
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         //bleeding
-        target.addStatusEffect(new StatusEffectInstance(ModEffects.BLEED,200,1));
+        target.addStatusEffect(new StatusEffectInstance(ModEffects.BLEED,150,1));
         return super.postHit(stack, target, attacker);
+
+
+
     }
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "makeitgoth:block/gothstone_bricks"
+  }
+}

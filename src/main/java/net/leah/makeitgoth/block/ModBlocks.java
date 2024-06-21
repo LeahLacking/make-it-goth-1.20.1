@@ -23,6 +23,11 @@ public class ModBlocks {
     public static final Block STEEL_BLOCK = registerBlock("steel_block",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque()));
 
+    public static final Block STEEL_GRATE = registerBlock("steel_grate",
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque()));
+
+    public static final Block STEEL_BARS = registerBlock("steel_bars",
+            new PaneBlock(FabricBlockSettings.copyOf(Blocks.IRON_BARS).nonOpaque()));
 
 
    // rotwood blocks
@@ -60,11 +65,18 @@ public class ModBlocks {
     public static final Block ROTWOOD_BUTTON = registerBlock("rotwood_button",
             new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_BUTTON), BlockSetType.OAK, 10, true));
 
+    public static final Block GOTHSTONE_STAIRS = registerBlock("gothstone_stairs",
+            new StairsBlock(ModBlocks.GOTHSTONE_BRICKS.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.STONE_STAIRS)));
 
+    public static final Block GOTHSTONE_SLAB = registerBlock("gothstone_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE_SLAB)));
 
+    public static final Block GOTHSTONE_BUTTON = registerBlock("gothstone_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.STONE_BUTTON), BlockSetType.STONE, 10, true));
 
-
-
+    public static final Block GOTHSTONE_WALL = registerBlock("gothstone_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICK_WALL)));
 
 
 

@@ -2,6 +2,7 @@ package net.leah.makeitgoth.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.leah.makeitgoth.block.ModBlocks;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 
@@ -14,8 +15,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
-        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE);
-                //all blocks mineable by a pickaxe
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+                .add(ModBlocks.GOTHSTONE_BRICKS)
+                .add(ModBlocks.GOTHSTONE_STAIRS)
+                .add(ModBlocks.GOTHSTONE_SLAB)
+                .add(ModBlocks.GOTHSTONE_WALL);
 
 
 
@@ -33,22 +37,25 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         //all blocks needing a diamond tool
 
 
-        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL);
-                //all blocks needing a stone tool
+        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
+                .add(ModBlocks.GOTHSTONE_BRICKS)
+                .add(ModBlocks.GOTHSTONE_STAIRS)
+                .add(ModBlocks.GOTHSTONE_SLAB)
+                .add(ModBlocks.GOTHSTONE_WALL);
 
 
 
 
 
-        getOrCreateTagBuilder(BlockTags.FENCES);
-        //Tag for fences
+        getOrCreateTagBuilder(BlockTags.FENCES)
+         .add(ModBlocks.ROTWOOD_FENCE);
 
 
-        getOrCreateTagBuilder(BlockTags.FENCE_GATES);
-        //Tag for fence gates
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+        .add(ModBlocks.ROTWOOD_FENCE_GATE);
 
-        getOrCreateTagBuilder(BlockTags.WALLS);
-                // Tag for walls
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.GOTHSTONE_WALL);
 
 
 

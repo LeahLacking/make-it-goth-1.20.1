@@ -16,10 +16,14 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) { //generates the Block models and textures
 
-        BlockStateModelGenerator.BlockTexturePool rotwoodPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ROTWOOD_PLANKS);
 
-    blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GOTHSTONE_BRICKS);
+
+        BlockStateModelGenerator.BlockTexturePool rotwoodPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ROTWOOD_PLANKS);
+        BlockStateModelGenerator.BlockTexturePool gothstonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GOTHSTONE_BRICKS);
+
         blockStateModelGenerator.registerLog(ModBlocks.ROTWOOD_LOG).log(ModBlocks.ROTWOOD_LOG).wood(ModBlocks.ROTWOOD_WOOD);
+
+        //rotwood datagen textures
 
         rotwoodPool.stairs(ModBlocks.ROTWOOD_STAIRS);
         rotwoodPool.slab(ModBlocks.ROTWOOD_SLAB);
@@ -27,6 +31,13 @@ public class ModModelProvider extends FabricModelProvider {
         rotwoodPool.fenceGate(ModBlocks.ROTWOOD_FENCE_GATE);
         rotwoodPool.pressurePlate(ModBlocks.ROTWOOD_PRESSURE_PLATE);
         rotwoodPool.button(ModBlocks.ROTWOOD_BUTTON);
+
+        //gothstone datagen textures
+        gothstonePool.stairs(ModBlocks.GOTHSTONE_STAIRS);
+        gothstonePool.slab(ModBlocks.GOTHSTONE_SLAB);
+        gothstonePool.wall(ModBlocks.GOTHSTONE_WALL);
+        gothstonePool.button(ModBlocks.GOTHSTONE_BUTTON);
+
 
 
     }

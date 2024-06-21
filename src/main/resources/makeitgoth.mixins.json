@@ -7,7 +7,7 @@
 	"client": [
 		"WheelSawItemRendererAccessor",
 		"WheelSawItemRendererMixin",
-		"WheelsawModelLoaderMixin",
+		"WheelSawModelLoaderMixin",
 		"RifleHalberdItemRendererAccessor",
 		"RifleHalberdItemRendererMixin",
 		"RifleHalberdModelLoaderMixin"

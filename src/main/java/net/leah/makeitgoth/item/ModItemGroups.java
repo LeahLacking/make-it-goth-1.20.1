@@ -20,12 +20,16 @@ public class ModItemGroups {
                         entries.add(ModItems.RIFLE_HALBERD);
                         entries.add(ModItems.STEEL_INGOTS);
                         entries.add(ModBlocks.STEEL_BLOCK);
+                        entries.add(ModBlocks.STEEL_GRATE);
+                        entries.add(ModBlocks.STEEL_BARS);
                         entries.add(ModBlocks.GOTHSTONE_BRICKS);
-                        entries.add(ModBlocks.ROTWOOD_PLANKS);
+                        entries.add(ModBlocks.GOTHSTONE_STAIRS);
+                        entries.add(ModBlocks.GOTHSTONE_SLAB);
+                        entries.add(ModBlocks.GOTHSTONE_WALL);
+                        entries.add(ModBlocks.ROTWOOD_BUTTON);
                         entries.add(ModBlocks.ROTWOOD_LOG);
                         entries.add(ModBlocks.ROTWOOD_STAIRS);
                         entries.add(ModBlocks.ROTWOOD_SLAB);
-                        entries.add(ModBlocks.ROTWOOD_BUTTON);
                         entries.add(ModBlocks.ROTWOOD_PRESSURE_PLATE);
                         entries.add(ModBlocks.ROTWOOD_FENCE);
                         entries.add(ModBlocks.ROTWOOD_FENCE_GATE);
