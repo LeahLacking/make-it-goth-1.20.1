@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "makeitgoth:item/rusted_twinblades"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [ 180, -180, 180 ],
+      "translation": [ 2, 0.1, -3 ],
+      "scale": [ 2, 2, 1 ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [ 180, -180, 180 ],
+      "translation": [ 2, 0.1, -3 ],
+      "scale": [ 2, 2, 1 ]
+    },
+    "firstperson_righthand": {
+      "rotation": [ 180, -180, 180 ],
+      "translation": [ 1.13, 3.2, 1.13],
+      "scale": [ 2, 2, 1 ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [ 180, -180, 180 ],
+      "translation": [ 1.13, 3.2, 1.13],
+      "scale": [ 2, 2, 1 ]
+    }
+  }
+}

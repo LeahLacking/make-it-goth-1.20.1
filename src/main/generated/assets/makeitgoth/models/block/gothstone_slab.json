@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/slab",
   "textures": {
-    "bottom": "makeitgoth:block/gothstone_bricks",
-    "side": "makeitgoth:block/gothstone_bricks",
-    "top": "makeitgoth:block/gothstone_bricks"
+    "bottom": "makeitgoth:block/gothstone",
+    "side": "makeitgoth:block/gothstone",
+    "top": "makeitgoth:block/gothstone"
   }
 }

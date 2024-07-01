@@ -20,8 +20,6 @@ public class MakeItGoth implements ModInitializer {
 		ModBlocks.registerModBlock();
 		ModEffects.registerModEffects();
 
-
-
 		LOGGER.info("Hello Fabric world!");
 	}
 }

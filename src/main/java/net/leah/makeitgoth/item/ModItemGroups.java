@@ -22,11 +22,16 @@ public class ModItemGroups {
                         entries.add(ModBlocks.STEEL_BLOCK);
                         entries.add(ModBlocks.STEEL_GRATE);
                         entries.add(ModBlocks.STEEL_BARS);
-                        entries.add(ModBlocks.GOTHSTONE_BRICKS);
-                        entries.add(ModBlocks.GOTHSTONE_STAIRS);
+                        entries.add(ModBlocks.GOTHSTONE);
                         entries.add(ModBlocks.GOTHSTONE_SLAB);
+                        entries.add(ModBlocks.GOTHSTONE_STAIRS);
                         entries.add(ModBlocks.GOTHSTONE_WALL);
+                        entries.add(ModBlocks.GOTHSTONE_BRICKS);
+                        entries.add(ModBlocks.GOTHSTONE_BRICK_STAIRS);
+                        entries.add(ModBlocks.GOTHSTONE_BRICK_SLAB);
+                        entries.add(ModBlocks.GOTHSTONE_BRICK_WALL);
                         entries.add(ModBlocks.ROTWOOD_BUTTON);
+                        entries.add(ModBlocks.ROTWOOD_PLANKS);
                         entries.add(ModBlocks.ROTWOOD_LOG);
                         entries.add(ModBlocks.ROTWOOD_STAIRS);
                         entries.add(ModBlocks.ROTWOOD_SLAB);
@@ -34,7 +39,6 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ROTWOOD_FENCE);
                         entries.add(ModBlocks.ROTWOOD_FENCE_GATE);
 
-                       
                     }).build());
 
     public static void registerItemGroups() {

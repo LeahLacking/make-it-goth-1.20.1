@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/wall_inventory",
   "textures": {
-    "wall": "makeitgoth:block/gothstone"
+    "wall": "makeitgoth:block/gothstone_bricks"
   }
 }

@@ -4,7 +4,7 @@
       "model": "makeitgoth:block/gothstone_slab"
     },
     "type=double": {
-      "model": "makeitgoth:block/gothstone_bricks"
+      "model": "makeitgoth:block/gothstone"
     },
     "type=top": {
       "model": "makeitgoth:block/gothstone_slab_top"

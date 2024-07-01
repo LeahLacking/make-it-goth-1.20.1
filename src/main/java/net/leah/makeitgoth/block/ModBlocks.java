@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.block.v1.FabricBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.leah.makeitgoth.MakeItGoth;
+import net.leah.makeitgoth.block.custom.SteelBars;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -16,6 +17,12 @@ public class ModBlocks {
    //gothstone blocks
 
     public static final Block GOTHSTONE_BRICKS = registerBlock("gothstone_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).nonOpaque()));
+
+    public static final Block SHADED_GOTHSTONE_BRICKS = registerBlock("shaded_gothstone_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).nonOpaque()));
+
+    public static final Block GOTHSTONE = registerBlock("gothstone",
             new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).nonOpaque()));
 
     // steel related blocks
@@ -64,6 +71,19 @@ public class ModBlocks {
 
     public static final Block ROTWOOD_BUTTON = registerBlock("rotwood_button",
             new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_BUTTON), BlockSetType.OAK, 10, true));
+
+    public static final Block GOTHSTONE_BRICK_STAIRS = registerBlock("gothstone_brick_stairs",
+            new StairsBlock(ModBlocks.GOTHSTONE_BRICKS.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.STONE_STAIRS)));
+
+    public static final Block GOTHSTONE_BRICK_SLAB = registerBlock("gothstone_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE_SLAB)));
+
+    public static final Block GOTHSTONE_BRICK_BUTTON = registerBlock("gothstone_brick_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.STONE_BUTTON), BlockSetType.STONE, 10, true));
+
+    public static final Block GOTHSTONE_BRICK_WALL = registerBlock("gothstone_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICK_WALL)));
 
     public static final Block GOTHSTONE_STAIRS = registerBlock("gothstone_stairs",
             new StairsBlock(ModBlocks.GOTHSTONE_BRICKS.getDefaultState(),

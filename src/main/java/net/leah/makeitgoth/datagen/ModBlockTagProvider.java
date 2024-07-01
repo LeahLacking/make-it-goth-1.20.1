@@ -17,6 +17,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.GOTHSTONE_BRICKS)
+                .add(ModBlocks.GOTHSTONE_BRICK_STAIRS)
+                .add(ModBlocks.GOTHSTONE_BRICK_SLAB)
+                .add(ModBlocks.GOTHSTONE_BRICK_WALL)
+                .add(ModBlocks.GOTHSTONE)
                 .add(ModBlocks.GOTHSTONE_STAIRS)
                 .add(ModBlocks.GOTHSTONE_SLAB)
                 .add(ModBlocks.GOTHSTONE_WALL);
@@ -39,10 +43,13 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.GOTHSTONE_BRICKS)
+                .add(ModBlocks.GOTHSTONE_BRICK_STAIRS)
+                .add(ModBlocks.GOTHSTONE_BRICK_SLAB)
+                .add(ModBlocks.GOTHSTONE_BRICK_WALL)
+                .add(ModBlocks.GOTHSTONE)
                 .add(ModBlocks.GOTHSTONE_STAIRS)
                 .add(ModBlocks.GOTHSTONE_SLAB)
                 .add(ModBlocks.GOTHSTONE_WALL);
-
 
 
 
@@ -55,6 +62,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         .add(ModBlocks.ROTWOOD_FENCE_GATE);
 
         getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.GOTHSTONE_BRICK_WALL)
                 .add(ModBlocks.GOTHSTONE_WALL);
 
 

@@ -16,15 +16,12 @@ public class ModItems {
     new Item(new FabricItemSettings()));
     public static final Item WHEEL_SAW = registerItem("wheel_saw",new ChipItem(
             ToolMaterials.NETHERITE, 4 , 3f,new Item.Settings()));
-
     public static final Item RIFLE_HALBERD = registerItem("rifle_halberd",
             new BleedItem(ToolMaterials.DIAMOND, 4, -3f, new Item.Settings()));
-
-
-
+    public static final Item RUSTED_TWINBLADES = registerItem("rusted_twinblades",
+            new SwordItem(ToolMaterials.DIAMOND, 3, -2, new Item.Settings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
-
 
     }
     private static Item registerItem(String name, Item item) {
