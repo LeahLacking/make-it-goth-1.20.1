@@ -16,13 +16,13 @@ import static net.leah.makeitgoth.MakeItGoth.id;
 
 public class ModItems {
     public static final Item STEEL_INGOTS = registerItem("steel_ingots",
-            new Item(new FabricItemSettings()));
+            new Item(new Item.Settings()));
     public static final Item WHEEL_SAW = registerItem("wheel_saw", new ChipItem(
-            ToolMaterials.NETHERITE, 4, 3f, new Item.Settings()));
+            ToolMaterials.NETHERITE, new Item.Settings().attributeModifiers(ChipItem.createAttributeModifiers(ToolMaterials.NETHERITE, 4, 3f))));
     public static final Item RIFLE_HALBERD = registerItem("rifle_halberd",
-            new BleedItem(ToolMaterials.DIAMOND, 4, -3f, new Item.Settings()));
+            new BleedItem(ToolMaterials.DIAMOND, new Item.Settings().attributeModifiers(BleedItem.createAttributeModifiers(ToolMaterials.DIAMOND, 4, -3f))));
     public static final Item RUSTED_TWINBLADES = registerItem("rusted_twinblades",
-            new SwordItem(ToolMaterials.DIAMOND, 3, -2, new Item.Settings()));
+            new SwordItem(ToolMaterials.DIAMOND, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.DIAMOND, 3, -2))));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
 
