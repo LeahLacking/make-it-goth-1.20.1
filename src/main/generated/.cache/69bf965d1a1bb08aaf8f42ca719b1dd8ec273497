@@ -1,4 +1,4 @@
-// 1.21	2024-07-02T17:50:34.648900419	Make it Goth/Model Definitions
+// 1.21	2024-07-02T18:12:13.271379844	Make it Goth/Model Definitions
 aedb95d8c77d02d61f5c45de2d1dba98d6cdadee assets/makeitgoth/models/block/gothstone_button_inventory.json
 d555bddb7bd4a1443ab025d043efde384164ff9b assets/makeitgoth/models/item/gothstone_brick_slab.json
 e7074f3e003f207c8bc916d85a8d4dd24d7dd7d1 assets/makeitgoth/models/block/rotwood_log.json
@@ -16,8 +16,8 @@ f8f790fb755f2cef6306647a8e88c5859da95f40 assets/makeitgoth/models/block/gothston
 24722d8a7a6c280c4080b7aae58ef98fcb9d1343 assets/makeitgoth/models/block/gothstone_brick_stairs_inner.json
 70eeaaea879dd7963d89ff64274cf8557961748c assets/makeitgoth/blockstates/rotwood_planks.json
 096b2f6f2df99092643a5b9dac23a9d60225a7d2 assets/makeitgoth/models/block/rotwood_fence_side.json
-990190a663e2aefe9dd7764722707b72e9348206 assets/makeitgoth/blockstates/gothstone_stairs.json
 51ec855d29e47367c943c805c7a1d6a81d9ea00e assets/makeitgoth/models/block/rotwood_button.json
+990190a663e2aefe9dd7764722707b72e9348206 assets/makeitgoth/blockstates/gothstone_stairs.json
 fd61b961bc81b7b8c274f05a458f247b3d1a5f50 assets/makeitgoth/models/item/rotwood_slab.json
 08537f52e1b97ae59ddb5f67f32440e2f7008a17 assets/makeitgoth/models/item/gothstone_slab.json
 ef059e1d13241b94051dc2fb205385febbcce9cd assets/makeitgoth/models/block/gothstone_slab_top.json
@@ -76,11 +76,11 @@ fb1ccf948943622f539fbc025304c29f277dcc0e assets/makeitgoth/models/block/gothston
 2d25c4c5ca6d4beb2eb0dbb01afec9f524643511 assets/makeitgoth/models/block/gothstone_brick_slab_top.json
 d87f11c68426d4450752807278e3a4b7bf12aaae assets/makeitgoth/models/item/rotwood_fence_gate.json
 baa5c4e3c14af030ffb679e87571a569ad00afa0 assets/makeitgoth/blockstates/steel_block.json
-20f3817515d189c057afc343f936792cfbc45d55 assets/makeitgoth/models/block/gothstone_brick_button.json
 cdb60aa170cb917b330a04b263750405e837bccf assets/makeitgoth/models/block/gothstone_button.json
+20f3817515d189c057afc343f936792cfbc45d55 assets/makeitgoth/models/block/gothstone_brick_button.json
 42b5596be84103903d8900cde24a21a6b8e0ce8e assets/makeitgoth/models/block/rotwood_pressure_plate_down.json
-f8cc1a212e98fbd1f559651aa9b578257b22f53c assets/makeitgoth/models/item/gothstone_stairs.json
 52fa99b2566bd7abac6bd74664dc3a7d4a97f5c1 assets/makeitgoth/models/item/gothstone_brick_button.json
+f8cc1a212e98fbd1f559651aa9b578257b22f53c assets/makeitgoth/models/item/gothstone_stairs.json
 facd427a8f0612d63e07e934364fb332590e71ef assets/makeitgoth/models/block/steel_grate.json
 e74a3732c56fba2e30ab7aa79b0c8d219458be01 assets/makeitgoth/models/block/rotwood_wood.json
 58fd01160396c7297622f8e8cb755430cf98be94 assets/makeitgoth/models/block/gothstone_brick_button_inventory.json
