@@ -1,5 +1,6 @@
 package net.leah.makeitgoth.block;
 
+import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.leah.makeitgoth.MakeItGoth;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
@@ -107,6 +108,10 @@ public class ModBlocks {
 
     public static void registerModBlock() {
         MakeItGoth.LOGGER.info("Registering ModBlocks for " + MakeItGoth.MOD_ID);
+
+        //this is how to do block stripping
+        StrippableBlockRegistry.register(ROTWOOD_LOG, STRIPPED_ROTWOOD_LOG);
+        StrippableBlockRegistry.register(ROTWOOD_WOOD, STRIPPED_ROTWOOD_WOOD);
     }
 }
 
