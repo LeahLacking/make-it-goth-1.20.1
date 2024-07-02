@@ -10,9 +10,10 @@ public class BleedEffect extends StatusEffect {
         super(category, color);
     }
 
-    public void applyUpdateEffect(LivingEntity entity, int amplifier) {
+    public boolean applyUpdateEffect(LivingEntity entity, int amplifier) {
         super.applyUpdateEffect(entity, amplifier);
         entity.damage(entity.getDamageSources().magic(), amplifier);
+        return true;
     }
 
     public boolean canApplyUpdateEffect(int duration, int amplifier) {
