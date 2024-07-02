@@ -1,18 +1,15 @@
 {
-	"required": true,
-	"package": "net.leah.makeitgoth.mixin",
-	"compatibilityLevel": "JAVA_17",
-	"mixins": [
-	],
-	"client": [
-		"WheelSawItemRendererAccessor",
-		"WheelSawItemRendererMixin",
-		"WheelSawModelLoaderMixin",
-		"RifleHalberdItemRendererAccessor",
-		"RifleHalberdItemRendererMixin",
-		"RifleHalberdModelLoaderMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
-	}
+  "required": true,
+  "package": "net.leah.makeitgoth.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+  ],
+  "client": [
+    "MakeItGothItemRendererAccessor",
+    "MakeItGothItemRendererMixin",
+    "MakeItGothModelLoaderMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
 }
