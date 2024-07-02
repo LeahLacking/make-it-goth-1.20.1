@@ -2,6 +2,7 @@ package net.leah.makeitgoth.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
+import net.leah.makeitgoth.MakeItGoth;
 import net.leah.makeitgoth.effect.ModEffects;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -23,7 +24,13 @@ public class ModEnLangProvider extends FabricLanguageProvider {
     public void generateTranslations(RegistryWrapper.WrapperLookup registryLookup, TranslationBuilder builder) {
         // This automagically gets all the mods items and makes translations for them
         Registries.ITEM.stream().filter(item -> Objects.equals(getId(item).getNamespace(), MOD_ID))
-                .forEach(item -> builder.add(item.getTranslationKey(), getLang(getId(item))));
+                .forEach(item -> {
+                    try {
+                        builder.add(item.getTranslationKey(), getLang(getId(item)));
+                    } catch (Exception _e) {
+                        MakeItGoth.LOGGER.info("Skipped: {}", getId(item));
+                    }
+                });
 
         builder.add("itemgroup.makeitgoth", "Make It Goth");
         builder.add(ModEffects.BLEED.value(), "Bleed");
