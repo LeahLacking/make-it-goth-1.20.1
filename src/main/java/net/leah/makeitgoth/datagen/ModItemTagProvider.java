@@ -43,6 +43,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         copy(BlockTags.SLABS, ItemTags.SLABS);
         copy(BlockTags.STAIRS, ItemTags.STAIRS);
         copy(BlockTags.FENCES, ItemTags.FENCES);
+        copy(BlockTags.BUTTONS, ItemTags.BUTTONS);
     }
 
 }

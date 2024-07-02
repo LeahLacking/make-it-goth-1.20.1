@@ -85,6 +85,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         //logs
         getOrCreateTagBuilder(ModTags.ROTWOOD_LOGS)
                 .add(ROTWOOD_LOG, STRIPPED_ROTWOOD_LOG, ROTWOOD_WOOD, STRIPPED_ROTWOOD_WOOD);
+
         getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
                 .forceAddTag(ModTags.ROTWOOD_LOGS);
 
@@ -99,6 +100,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.SLABS)
                 .add(GOTHSTONE_BRICK_SLAB, GOTHSTONE_SLAB);
+
+        getOrCreateTagBuilder(BlockTags.BUTTONS)
+                .add(GOTHSTONE_BRICK_BUTTON, GOTHSTONE_BUTTON);
     }
 }
 
