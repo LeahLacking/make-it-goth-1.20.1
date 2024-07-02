@@ -1,0 +1,207 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "makeitgoth:block/test_bars_post_ends"
+      }
+    },
+    {
+      "apply": {
+        "model": "makeitgoth:block/test_bars_post"
+      },
+      "when": {
+        "east": "false",
+        "north": "false",
+        "south": "false",
+        "west": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "makeitgoth:block/test_bars_cap"
+      },
+      "when": {
+        "east": "false",
+        "north": "true",
+        "south": "false",
+        "spikes": "false",
+        "west": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "makeitgoth:block/test_bars_cap",
+        "y": 90
+      },
+      "when": {
+        "east": "true",
+        "north": "false",
+        "south": "false",
+        "spikes": "false",
+        "west": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "makeitgoth:block/test_bars_cap_alt"
+      },
+      "when": {
+        "east": "false",
+        "north": "false",
+        "south": "true",
+        "spikes": "false",
+        "west": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "makeitgoth:block/test_bars_cap_alt",
+        "y": 90
+      },
+      "when": {
+        "east": "false",
+        "north": "false",
+        "south": "false",
+        "spikes": "false",
+        "west": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "makeitgoth:block/test_bars_side"
+      },
+      "when": {
+        "north": "true",
+        "spikes": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "makeitgoth:block/test_bars_side",
+        "y": 90
+      },
+      "when": {
+        "east": "true",
+        "spikes": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "makeitgoth:block/test_bars_side_alt"
+      },
+      "when": {
+        "south": "true",
+        "spikes": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "makeitgoth:block/test_bars_side_alt",
+        "y": 90
+      },
+      "when": {
+        "spikes": "false",
+        "west": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "makeitgoth:block/test_bars_post_spikes"
+      },
+      "when": {
+        "east": "false",
+        "north": "false",
+        "south": "false",
+        "west": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "makeitgoth:block/test_bars_cap_spikes"
+      },
+      "when": {
+        "east": "false",
+        "north": "true",
+        "south": "false",
+        "spikes": "true",
+        "west": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "makeitgoth:block/test_bars_cap_spikes",
+        "y": 90
+      },
+      "when": {
+        "east": "true",
+        "north": "false",
+        "south": "false",
+        "spikes": "true",
+        "west": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "makeitgoth:block/test_bars_cap_alt_spikes"
+      },
+      "when": {
+        "east": "false",
+        "north": "false",
+        "south": "true",
+        "spikes": "true",
+        "west": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "makeitgoth:block/test_bars_cap_alt_spikes",
+        "y": 90
+      },
+      "when": {
+        "east": "false",
+        "north": "false",
+        "south": "false",
+        "spikes": "true",
+        "west": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "makeitgoth:block/test_bars_side_spikes"
+      },
+      "when": {
+        "north": "true",
+        "spikes": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "makeitgoth:block/test_bars_side_spikes",
+        "y": 90
+      },
+      "when": {
+        "east": "true",
+        "spikes": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "makeitgoth:block/test_bars_side_alt_spikes"
+      },
+      "when": {
+        "south": "true",
+        "spikes": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "makeitgoth:block/test_bars_side_alt_spikes",
+        "y": 90
+      },
+      "when": {
+        "spikes": "true",
+        "west": "true"
+      }
+    }
+  ]
+}
