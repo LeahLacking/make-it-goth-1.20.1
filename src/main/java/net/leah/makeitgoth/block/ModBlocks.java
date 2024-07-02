@@ -2,6 +2,7 @@ package net.leah.makeitgoth.block;
 
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.leah.makeitgoth.MakeItGoth;
+import net.leah.makeitgoth.block.custom.SteelBars;
 import net.leah.makeitgoth.item.ModItems;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
@@ -32,7 +33,6 @@ public class ModBlocks {
 
     public static final Block STEEL_BARS = registerBlock("steel_bars",
             new PaneBlock(copySettings(Blocks.IRON_BARS).nonOpaque()));
-
 
     // rotwood blocks
     public static final Block ROTWOOD_PLANKS = registerBlock("rotwood_planks",
@@ -91,7 +91,7 @@ public class ModBlocks {
 
     public static final Block GOTHSTONE_WALL = registerBlock("gothstone_wall",
             new WallBlock(copySettings(Blocks.STONE_BRICK_WALL)));
-
+    public static final Block TEST_BARS = registerBlock("test_bars", new SteelBars(copySettings(STEEL_BARS)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
