@@ -18,7 +18,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR);
         //Tag for trimmable armor
 
-        getOrCreateTagBuilder(ItemTags.MUSIC_DISCS);
+//        getOrCreateTagBuilder(ItemTags.MUSIC_DISCS);
         //Tag for music discs
 
 
