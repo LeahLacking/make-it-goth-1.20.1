@@ -30,14 +30,14 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 );
 
 
-        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE);
+//        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE);
         //all blocks mineable by axe
 
 
-        getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL);
+//        getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL);
         //all blocks needing a iron tool
 
-        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL);
+//        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL);
         //all blocks needing a diamond tool
 
 
