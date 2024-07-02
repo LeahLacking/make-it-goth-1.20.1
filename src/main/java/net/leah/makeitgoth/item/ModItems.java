@@ -12,9 +12,14 @@ import net.minecraft.item.ToolMaterials;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+
 import static net.leah.makeitgoth.MakeItGoth.id;
 
 public class ModItems {
+    public static ArrayList<Item> creativeTabItems = new ArrayList<>();
+
     public static final Item STEEL_INGOT = registerItem("steel_ingot",
             // This is how you add food components to an item
             new Item(new Item.Settings().food(ModFoodComponents.STEEL_INGOT)));
@@ -29,16 +34,18 @@ public class ModItems {
 
     }
 
-    private static Item registerItem(String name, Item item) {
-        return Registry.register(Registries.ITEM, id(name), item);
+    public static Item registerItem(String name, Item item) {
+        Item regItem = Registry.register(Registries.ITEM, id(name), item);
+        creativeTabItems.add(regItem);
+        return regItem;
     }
 
     public static void registerModItems() {
         MakeItGoth.LOGGER.info("Registering ModItems for" + MakeItGoth.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(ModItems::addItemsToIngredientItemGroup);
-
     }
+
 }
 
 

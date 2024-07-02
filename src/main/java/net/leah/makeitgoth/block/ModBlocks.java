@@ -2,6 +2,7 @@ package net.leah.makeitgoth.block;
 
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.leah.makeitgoth.MakeItGoth;
+import net.leah.makeitgoth.item.ModItems;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -98,8 +99,7 @@ public class ModBlocks {
     }
 
     private static Item registerBlockItem(String name, Block block) {
-        return Registry.register(Registries.ITEM, id(name),
-                new BlockItem(block, new Item.Settings()));
+        return ModItems.registerItem(name, new BlockItem(block, new Item.Settings()));
     }
 
     private static AbstractBlock.Settings copySettings(Block block) {

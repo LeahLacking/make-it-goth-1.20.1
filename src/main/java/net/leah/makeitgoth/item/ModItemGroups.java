@@ -3,6 +3,7 @@ package net.leah.makeitgoth.item;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.leah.makeitgoth.MakeItGoth;
 import net.leah.makeitgoth.block.ModBlocks;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -16,8 +17,8 @@ public class ModItemGroups {
             id("makeitgoth"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.makeitgoth"))
                     .icon(() -> new ItemStack(ModBlocks.GOTHSTONE_BRICKS)).entries((displayContext, entries) -> {
-
-                        entries.add(ModItems.WHEEL_SAW);
+                        entries.addAll(ModItems.creativeTabItems.stream().map(Item::getDefaultStack).toList());
+                     /*   entries.add(ModItems.WHEEL_SAW);
                         entries.add(ModItems.RIFLE_HALBERD);
                         entries.add(ModItems.STEEL_INGOT);
                         entries.add(ModBlocks.STEEL_BLOCK);
@@ -38,7 +39,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ROTWOOD_SLAB);
                         entries.add(ModBlocks.ROTWOOD_PRESSURE_PLATE);
                         entries.add(ModBlocks.ROTWOOD_FENCE);
-                        entries.add(ModBlocks.ROTWOOD_FENCE_GATE);
+                        entries.add(ModBlocks.ROTWOOD_FENCE_GATE);*/
 
                     }).build());
 
