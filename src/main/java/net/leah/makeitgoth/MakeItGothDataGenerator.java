@@ -3,6 +3,7 @@ package net.leah.makeitgoth;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.leah.makeitgoth.datagen.ModBlockTagProvider;
+import net.leah.makeitgoth.datagen.ModEnLangProvider;
 import net.leah.makeitgoth.datagen.ModItemTagProvider;
 import net.leah.makeitgoth.datagen.ModModelProvider;
 
@@ -14,6 +15,7 @@ public class MakeItGothDataGenerator implements DataGeneratorEntrypoint {
         FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
         pack.addProvider(ModModelProvider::new);
+        pack.addProvider(ModEnLangProvider::new);
 
         // this looks complicated, but is here for laziness’s sake
         AtomicReference<ModBlockTagProvider> blockTags = new AtomicReference<>();
