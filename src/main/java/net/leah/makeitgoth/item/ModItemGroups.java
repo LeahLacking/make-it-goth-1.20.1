@@ -12,7 +12,7 @@ import net.minecraft.text.Text;
 import static net.leah.makeitgoth.MakeItGoth.id;
 
 public class ModItemGroups {
-    public static final ItemGroup makeitgoth_GROUP = Registry.register(Registries.ITEM_GROUP,
+    public static final ItemGroup MAKEITGOTH_GROUP = Registry.register(Registries.ITEM_GROUP,
             id("makeitgoth"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.makeitgoth"))
                     .icon(() -> new ItemStack(ModBlocks.GOTHSTONE_BRICKS)).entries((displayContext, entries) -> {
