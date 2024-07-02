@@ -1,6 +1,5 @@
 package net.leah.makeitgoth.mixin;
 
-import net.leah.makeitgoth.MakeItGoth;
 import net.minecraft.client.color.block.BlockColors;
 import net.minecraft.client.render.model.ModelLoader;
 import net.minecraft.client.render.model.json.JsonUnbakedModel;
@@ -16,6 +15,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import java.util.List;
 import java.util.Map;
 
+import static net.leah.makeitgoth.MakeItGoth.id;
+
 @Mixin(ModelLoader.class)
 public abstract class WheelSawModelLoaderMixin {
     @Shadow
@@ -23,8 +24,7 @@ public abstract class WheelSawModelLoaderMixin {
 
     @Inject(method = "<init>", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/render/model/ModelLoader;addModel(Lnet/minecraft/client/util/ModelIdentifier;)V", ordinal = 3, shift = At.Shift.AFTER))
     public void addWheelSawModel(BlockColors blockColors, Profiler profiler, Map<Identifier, JsonUnbakedModel> jsonUnbakedModels, Map<Identifier, List<ModelLoader.SourceTrackedData>> blockStates, CallbackInfo ci) {
-        this.addModel(new ModelIdentifier(MakeItGoth.MOD_ID, "wheel_saw_3d", "inventory"));
-
+        this.addModel(new ModelIdentifier(id("wheel_saw_3d"), "inventory"));
 
 
     }
