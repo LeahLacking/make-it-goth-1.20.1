@@ -14,15 +14,15 @@ public class ModModelProvider extends FabricModelProvider {
     }
 
     @Override
-    public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) { //generates the Block models and textures
+    public void generateBlockStateModels(BlockStateModelGenerator gen) { //generates the Block models and textures
 
 
 
-        BlockStateModelGenerator.BlockTexturePool rotwoodPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ROTWOOD_PLANKS);
-        BlockStateModelGenerator.BlockTexturePool gothstoneBrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GOTHSTONE_BRICKS);
-        BlockStateModelGenerator.BlockTexturePool gothstonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GOTHSTONE);
+        BlockStateModelGenerator.BlockTexturePool rotwoodPool = gen.registerCubeAllModelTexturePool(ModBlocks.ROTWOOD_PLANKS);
+        BlockStateModelGenerator.BlockTexturePool gothstoneBrickPool = gen.registerCubeAllModelTexturePool(ModBlocks.GOTHSTONE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool gothstonePool = gen.registerCubeAllModelTexturePool(ModBlocks.GOTHSTONE);
 
-        blockStateModelGenerator.registerLog(ModBlocks.ROTWOOD_LOG).log(ModBlocks.ROTWOOD_LOG).wood(ModBlocks.ROTWOOD_WOOD);
+        gen.registerLog(ModBlocks.ROTWOOD_LOG).log(ModBlocks.ROTWOOD_LOG).wood(ModBlocks.ROTWOOD_WOOD);
 
         //rotwood datagen textures
 
@@ -44,18 +44,17 @@ public class ModModelProvider extends FabricModelProvider {
         gothstonePool.wall(ModBlocks.GOTHSTONE_WALL);
         gothstonePool.button(ModBlocks.GOTHSTONE_BUTTON);
 
+        gen.registerSimpleCubeAll(ModBlocks.STEEL_BLOCK);
+        gen.registerSimpleCubeAll(ModBlocks.STEEL_GRATE);
+
 
 
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) { //generates the item models
-      //  itemModelGenerator.register(ModItems.ESTROGEN_WAFFLE, Models.GENERATED);
-
-
-
-
-
+        //  itemModelGenerator.register(ModItems.ESTROGEN_WAFFLE, Models.GENERATED);
+          itemModelGenerator.register(ModItems.STEEL_INGOT, Models.GENERATED);
     }
 }
 
