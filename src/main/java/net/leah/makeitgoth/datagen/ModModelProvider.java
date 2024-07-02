@@ -23,6 +23,7 @@ public class ModModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool gothstonePool = gen.registerCubeAllModelTexturePool(ModBlocks.GOTHSTONE);
 
         gen.registerLog(ModBlocks.ROTWOOD_LOG).log(ModBlocks.ROTWOOD_LOG).wood(ModBlocks.ROTWOOD_WOOD);
+        gen.registerLog(ModBlocks.STRIPPED_ROTWOOD_LOG).log(ModBlocks.STRIPPED_ROTWOOD_LOG).wood(ModBlocks.STRIPPED_ROTWOOD_WOOD);
 
         //rotwood datagen textures
 
