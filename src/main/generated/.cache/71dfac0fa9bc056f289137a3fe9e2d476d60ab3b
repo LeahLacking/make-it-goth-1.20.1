@@ -1,0 +1,19 @@
+// 1.21	2024-07-02T17:36:55.479903304	Make it Goth/Tags for minecraft:block
+616945fd32bb0638fa64512009fff4273a3f5266 data/minecraft/tags/block/wooden_fences.json
+8d26889a2701c322b10d69e3c0549828ff3ddb9f data/minecraft/tags/block/planks.json
+8e9a3f8692c34f8f5f37ec91ce6b8130707b9a3f data/minecraft/tags/block/logs_that_burn.json
+e8040b5d6127f3707d1740534666b35b90122a34 data/minecraft/tags/block/needs_stone_tool.json
+98398b79bab538e6ae4cd4bc01c68348f4746a16 data/minecraft/tags/block/wooden_buttons.json
+396f59f4f93eee5de4a3c6c5cc3ffc24199e429a data/minecraft/tags/block/wooden_slabs.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/needs_diamond_tool.json
+b4a8ecc49693d12bfe43b524e048dec046156502 data/minecraft/tags/block/slabs.json
+aafef77b1fe809346263fe0566ff83c9ea5d9a99 data/minecraft/tags/block/wooden_stairs.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/needs_iron_tool.json
+1736691ef6e1f2cdc0e7a892eaaf73977081f931 data/minecraft/tags/block/stairs.json
+c37a5443d021d1ea10a1a18d26807df1ff46db60 data/makeitgoth/tags/block/rotwood_logs.json
+d95b89f2635ffb41a37209c05f30995c45ca710d data/minecraft/tags/block/wooden_pressure_plates.json
+77ae706d3e9d45f70683f666f99c005c783b37c4 data/minecraft/tags/block/buttons.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/mineable/axe.json
+e8040b5d6127f3707d1740534666b35b90122a34 data/minecraft/tags/block/mineable/pickaxe.json
+be123c02e89d60b009fff7192822bf395bfda58c data/minecraft/tags/block/fence_gates.json
+38e8f9845e4e8cc85aeece5928ef6ed94a498587 data/minecraft/tags/block/walls.json
