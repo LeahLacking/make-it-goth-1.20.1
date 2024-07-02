@@ -19,7 +19,7 @@ public class ModItemGroups {
 
                         entries.add(ModItems.WHEEL_SAW);
                         entries.add(ModItems.RIFLE_HALBERD);
-                        entries.add(ModItems.STEEL_INGOTS);
+                        entries.add(ModItems.STEEL_INGOT);
                         entries.add(ModBlocks.STEEL_BLOCK);
                         entries.add(ModBlocks.STEEL_GRATE);
                         entries.add(ModBlocks.STEEL_BARS);

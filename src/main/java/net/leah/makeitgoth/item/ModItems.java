@@ -15,7 +15,7 @@ import net.minecraft.registry.Registry;
 import static net.leah.makeitgoth.MakeItGoth.id;
 
 public class ModItems {
-    public static final Item STEEL_INGOTS = registerItem("steel_ingots",
+    public static final Item STEEL_INGOT = registerItem("steel_ingot",
             // This is how you add food components to an item
             new Item(new Item.Settings().food(ModFoodComponents.STEEL_INGOT)));
     public static final Item WHEEL_SAW = registerItem("wheel_saw", new ChipItem(
