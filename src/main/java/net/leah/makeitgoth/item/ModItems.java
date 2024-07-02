@@ -16,7 +16,8 @@ import static net.leah.makeitgoth.MakeItGoth.id;
 
 public class ModItems {
     public static final Item STEEL_INGOTS = registerItem("steel_ingots",
-            new Item(new Item.Settings()));
+            // This is how you add food components to an item
+            new Item(new Item.Settings().food(ModFoodComponents.STEEL_INGOT)));
     public static final Item WHEEL_SAW = registerItem("wheel_saw", new ChipItem(
             ToolMaterials.NETHERITE, new Item.Settings().attributeModifiers(ChipItem.createAttributeModifiers(ToolMaterials.NETHERITE, 4, 3f))));
     public static final Item RIFLE_HALBERD = registerItem("rifle_halberd",

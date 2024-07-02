@@ -22,6 +22,8 @@ public class ModFoodComponents {
 //            .statusEffect(new StatusEffectInstance(StatusEffects.HUNGER, 600), 0.3F) // uncomment this to add hunger for  0.3 chance
             .build(); // This finalizes the component and has to be last
 
+    // To see how to add food components to an item, look at the ModItems.class
+
     // if you ever want to steel from vanilla, The food components are stored in
     // net.minecraft.component.type.FoodComponents || FoodComponents.class
 }
