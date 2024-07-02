@@ -6,8 +6,9 @@ import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.registry.Registries;
-import net.minecraft.util.Identifier;
 import net.minecraft.registry.Registry;
+
+import static net.leah.makeitgoth.MakeItGoth.id;
 
 public class ModEffects extends StatusEffects {
 
@@ -16,7 +17,7 @@ public class ModEffects extends StatusEffects {
 
 
     public static StatusEffect registerModEffect(String name, StatusEffect entry) {
-        return Registry.register(Registries.STATUS_EFFECT, new Identifier(MakeItGoth.MOD_ID, name), entry);
+        return Registry.register(Registries.STATUS_EFFECT, id(name), entry);
 
 
     }
