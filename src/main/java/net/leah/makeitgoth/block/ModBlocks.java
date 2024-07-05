@@ -1,8 +1,8 @@
 package net.leah.makeitgoth.block;
 
-import com.mojang.serialization.MapCodec;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.leah.makeitgoth.MakeItGoth;
+import net.leah.makeitgoth.block.custom.EmptyBeerCup;
 import net.leah.makeitgoth.block.custom.SteelBars;
 import net.leah.makeitgoth.item.ModItems;
 import net.minecraft.block.*;
@@ -17,12 +17,7 @@ public class ModBlocks {
 
 
     public static final Block EMPTY_BEER_CUP = registerBlock("empty_beer_cup",
-            new HorizontalFacingBlock(copySettings(Blocks.STONE_BRICKS).nonOpaque()) {
-                @Override
-                protected MapCodec<? extends HorizontalFacingBlock> getCodec() {
-                    return null;
-                }
-            });
+            new EmptyBeerCup(copySettings(Blocks.STONE_BRICKS).nonOpaque()));
 
 
     //gothstone blocks

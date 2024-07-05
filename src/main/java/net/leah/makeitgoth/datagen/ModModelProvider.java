@@ -3,7 +3,6 @@ package net.leah.makeitgoth.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.leah.makeitgoth.block.ModBlocks;
-import net.leah.makeitgoth.block.custom.EmptyBeerCup;
 import net.leah.makeitgoth.block.custom.SteelBars;
 import net.leah.makeitgoth.item.ModItems;
 import net.minecraft.block.Block;
@@ -23,7 +22,7 @@ public class ModModelProvider extends FabricModelProvider {
 
 
 
-        registerNorthDefaultHorizontalRotation(gen, ModBlocks.EMPTY_BEER_CUP);
+        registerFacingBlock(gen, ModBlocks.EMPTY_BEER_CUP);
 
         BlockStateModelGenerator.BlockTexturePool rotwoodPool = gen.registerCubeAllModelTexturePool(ModBlocks.ROTWOOD_PLANKS);
         BlockStateModelGenerator.BlockTexturePool gothstoneBrickPool = gen.registerCubeAllModelTexturePool(ModBlocks.GOTHSTONE_BRICKS);
@@ -101,7 +100,7 @@ public class ModModelProvider extends FabricModelProvider {
 
 
 
-    static void registerNorthDefaultHorizontalRotation(BlockStateModelGenerator gen, Block block) {
+    static void registerFacingBlock(BlockStateModelGenerator gen, Block block) {
         gen.blockStateCollector.accept(VariantsBlockStateSupplier.create(block, BlockStateVariant.create().put(VariantSettings.MODEL, ModelIds.getBlockModelId(block))).coordinate(createNorthDefaultHorizontalRotationStates()));
     }
 
