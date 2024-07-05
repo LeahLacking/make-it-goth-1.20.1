@@ -3,6 +3,7 @@ package net.leah.makeitgoth;
 import net.fabricmc.api.ModInitializer;
 
 import net.leah.makeitgoth.block.ModBlocks;
+import net.leah.makeitgoth.block.entity.ModBlockEntities;
 import net.leah.makeitgoth.effect.ModEffects;
 import net.leah.makeitgoth.item.ModItemGroups;
 import net.leah.makeitgoth.item.ModItems;
@@ -18,6 +19,7 @@ public class MakeItGoth implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlock();
+		ModBlockEntities.registerBlockEntities();
 		ModEffects.registerModEffects();
 
 		LOGGER.info("Hello Fabric world!");

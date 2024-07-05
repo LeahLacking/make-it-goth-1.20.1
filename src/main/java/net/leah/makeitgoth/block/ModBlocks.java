@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.block.v1.FabricBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.leah.makeitgoth.MakeItGoth;
+import net.leah.makeitgoth.block.custom.FogThingy;
 import net.leah.makeitgoth.block.custom.SteelBars;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
@@ -13,6 +14,10 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
+
+    //foggythingy
+    public static final Block FogThingyBlock = registerBlock("fog_thingy_block",
+            new FogThingy(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK),Boolean.TRUE));
 
    //gothstone blocks
 
