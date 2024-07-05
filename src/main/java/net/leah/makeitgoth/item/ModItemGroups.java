@@ -17,13 +17,13 @@ public class ModItemGroups {
             id("makeitgoth"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.makeitgoth"))
                     .icon(() -> new ItemStack(ModBlocks.GOTHSTONE_BRICKS)).entries((displayContext, entries) -> {
-                        entries.addAll(ModItems.creativeTabItems.stream().map(Item::getDefaultStack).toList());
-                     /*   entries.add(ModItems.WHEEL_SAW);
+                       // entries.addAll(ModItems.creativeTabItems.stream().map(Item::getDefaultStack).toList());
+                       entries.add(ModItems.WHEEL_SAW);
                         entries.add(ModItems.RIFLE_HALBERD);
                         entries.add(ModItems.STEEL_INGOT);
                         entries.add(ModBlocks.STEEL_BLOCK);
                         entries.add(ModBlocks.STEEL_GRATE);
-                        entries.add(ModBlocks.STEEL_BARS);
+                        entries.add(ModBlocks.TEST_BARS);
                         entries.add(ModBlocks.GOTHSTONE);
                         entries.add(ModBlocks.GOTHSTONE_SLAB);
                         entries.add(ModBlocks.GOTHSTONE_STAIRS);
@@ -39,7 +39,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ROTWOOD_SLAB);
                         entries.add(ModBlocks.ROTWOOD_PRESSURE_PLATE);
                         entries.add(ModBlocks.ROTWOOD_FENCE);
-                        entries.add(ModBlocks.ROTWOOD_FENCE_GATE);*/
+                        entries.add(ModBlocks.ROTWOOD_FENCE_GATE);
+                        entries.add(ModBlocks.EMPTY_BEER_CUP);
 
                     }).build());
 

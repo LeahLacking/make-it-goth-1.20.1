@@ -3,6 +3,7 @@ package net.leah.makeitgoth.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.leah.makeitgoth.block.ModBlocks;
+import net.leah.makeitgoth.block.custom.EmptyBeerCup;
 import net.leah.makeitgoth.block.custom.SteelBars;
 import net.leah.makeitgoth.item.ModItems;
 import net.minecraft.block.Block;
@@ -18,6 +19,8 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator gen) { //generates the Block models and textures
 
+
+        gen.createNonTemplateHorizontalBlock(ModBlocks.EMPTY_BEER_CUP);
 
         BlockStateModelGenerator.BlockTexturePool rotwoodPool = gen.registerCubeAllModelTexturePool(ModBlocks.ROTWOOD_PLANKS);
         BlockStateModelGenerator.BlockTexturePool gothstoneBrickPool = gen.registerCubeAllModelTexturePool(ModBlocks.GOTHSTONE_BRICKS);
@@ -48,6 +51,8 @@ public class ModModelProvider extends FabricModelProvider {
 
         gen.registerSimpleCubeAll(ModBlocks.STEEL_BLOCK);
         gen.registerSimpleCubeAll(ModBlocks.STEEL_GRATE);
+
+
 
         registerBars(gen, ModBlocks.TEST_BARS);
     }

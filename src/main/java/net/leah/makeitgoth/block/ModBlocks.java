@@ -14,11 +14,13 @@ import static net.leah.makeitgoth.MakeItGoth.id;
 
 public class ModBlocks {
 
-    //gothstone blocks
-    public static final Block GOTHSTONE_BRICKS = registerBlock("gothstone_bricks",
+
+    public static final Block EMPTY_BEER_CUP = registerBlock("empty_beer_cup",
             new Block(copySettings(Blocks.STONE_BRICKS).nonOpaque()));
 
-    public static final Block SHADED_GOTHSTONE_BRICKS = registerBlock("shaded_gothstone_bricks",
+
+    //gothstone blocks
+    public static final Block GOTHSTONE_BRICKS = registerBlock("gothstone_bricks",
             new Block(copySettings(Blocks.STONE_BRICKS).nonOpaque()));
 
     public static final Block GOTHSTONE = registerBlock("gothstone",
