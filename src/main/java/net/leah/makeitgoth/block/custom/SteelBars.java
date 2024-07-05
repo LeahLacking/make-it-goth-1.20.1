@@ -14,6 +14,8 @@ import org.jetbrains.annotations.Nullable;
 public class SteelBars extends PaneBlock {
     public static BooleanProperty SPIKES = BooleanProperty.of("spikes");
 
+
+
     public SteelBars(Settings settings) {
         super(settings);
         this.setDefaultState(this.stateManager.getDefaultState()
@@ -62,5 +64,8 @@ public class SteelBars extends PaneBlock {
 
 
         return superSate.with(SPIKES, !(aboveBlock.getBlock() instanceof SteelBars));
+
+
     }
+
 }

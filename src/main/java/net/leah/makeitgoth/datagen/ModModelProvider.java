@@ -11,6 +11,8 @@ import net.minecraft.data.client.*;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
 
+import static net.minecraft.data.client.BlockStateModelGenerator.createNorthDefaultHorizontalRotationStates;
+
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
         super(output);
@@ -20,7 +22,8 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator gen) { //generates the Block models and textures
 
 
-        gen.createNonTemplateHorizontalBlock(ModBlocks.EMPTY_BEER_CUP);
+
+        registerNorthDefaultHorizontalRotation(gen, ModBlocks.EMPTY_BEER_CUP);
 
         BlockStateModelGenerator.BlockTexturePool rotwoodPool = gen.registerCubeAllModelTexturePool(ModBlocks.ROTWOOD_PLANKS);
         BlockStateModelGenerator.BlockTexturePool gothstoneBrickPool = gen.registerCubeAllModelTexturePool(ModBlocks.GOTHSTONE_BRICKS);
@@ -53,7 +56,6 @@ public class ModModelProvider extends FabricModelProvider {
         gen.registerSimpleCubeAll(ModBlocks.STEEL_GRATE);
 
 
-
         registerBars(gen, ModBlocks.TEST_BARS);
     }
 
@@ -62,6 +64,9 @@ public class ModModelProvider extends FabricModelProvider {
         //  itemModelGenerator.register(ModItems.ESTROGEN_WAFFLE, Models.GENERATED);
         itemModelGenerator.register(ModItems.STEEL_INGOT, Models.GENERATED);
     }
+
+
+
 
     private void registerBars(BlockStateModelGenerator gen, Block block) {
         Identifier postEnds = ModelIds.getBlockSubModelId(block, "_post_ends");
@@ -73,6 +78,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         gen.registerItemModel(block);
     }
+
 
     private MultipartBlockStateSupplier makeModels(Block block, MultipartBlockStateSupplier state, Boolean spikes) {
         var str = spikes ? "_spikes" : "";
@@ -92,5 +98,13 @@ public class ModModelProvider extends FabricModelProvider {
                 .with(When.create().set(SteelBars.SPIKES, spikes).set(Properties.SOUTH, true), BlockStateVariant.create().put(VariantSettings.MODEL, sideAlt))
                 .with(When.create().set(SteelBars.SPIKES, spikes).set(Properties.WEST, true), BlockStateVariant.create().put(VariantSettings.MODEL, sideAlt).put(VariantSettings.Y, VariantSettings.Rotation.R90));
     }
+
+
+
+    static void registerNorthDefaultHorizontalRotation(BlockStateModelGenerator gen, Block block) {
+        gen.blockStateCollector.accept(VariantsBlockStateSupplier.create(block, BlockStateVariant.create().put(VariantSettings.MODEL, ModelIds.getBlockModelId(block))).coordinate(createNorthDefaultHorizontalRotationStates()));
+    }
+
 }
+
 

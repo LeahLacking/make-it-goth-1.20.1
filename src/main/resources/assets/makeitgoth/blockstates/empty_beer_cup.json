@@ -1,20 +1,7 @@
 {
   "variants": {
-    "facing=east": {
-      "model": "makeitgoth:models/block/empty_beer_cup",
-      "y": 270
-    },
-    "facing=north": {
-      "model": "makeitgoth:models/block/empty_beer_cup",
-      "y": 180
-    },
-    "facing=south": {
-      "model": "makeitgoth:models/block/empty_beer_cup"
-    },
-    "facing=west": {
-      "model": "makeitgoth:models/block/empty_beer_cup",
-      "y": 90
-
+    "": {
+      "model": "makeitgoth:block/empty_beer_cup"
     }
   }
 }
