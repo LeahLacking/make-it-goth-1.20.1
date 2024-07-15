@@ -17,7 +17,10 @@ public class ModBlocks {
 
 
     public static final Block EMPTY_BEER_CUP = registerBlock("empty_beer_cup",
-            new EmptyBeerCup(copySettings(Blocks.STONE_BRICKS).nonOpaque()));
+            new EmptyBeerCup(copySettings(Blocks.LANTERN).nonOpaque()));
+
+    public static final Block PUMPKIN_RUM = registerBlock("pumpkin_rum",
+            new EmptyBeerCup(copySettings(Blocks.LANTERN).nonOpaque()));
 
 
     //gothstone blocks

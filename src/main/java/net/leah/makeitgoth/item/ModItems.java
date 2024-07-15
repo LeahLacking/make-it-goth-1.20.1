@@ -3,12 +3,10 @@ package net.leah.makeitgoth.item;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.leah.makeitgoth.MakeItGoth;
+import net.leah.makeitgoth.block.ModBlocks;
 import net.leah.makeitgoth.item.custom.BleedItem;
 import net.leah.makeitgoth.item.custom.ChipItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
-import net.minecraft.item.SwordItem;
-import net.minecraft.item.ToolMaterials;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 
@@ -23,6 +21,10 @@ public class ModItems {
     public static final Item STEEL_INGOT = registerItem("steel_ingot",
             // This is how you add food components to an item
             new Item(new Item.Settings().food(ModFoodComponents.STEEL_INGOT)));
+
+    public static final Item PUMPKIN_RUM_ITEM = registerItem("pumpkin_rum_item",
+            // This is how you add food components to an item
+            new BlockItem(ModBlocks.PUMPKIN_RUM, new Item.Settings().food(ModFoodComponents.STEEL_INGOT)));
     public static final Item WHEEL_SAW = registerItem("wheel_saw", new ChipItem(
             ToolMaterials.NETHERITE, new Item.Settings().attributeModifiers(ChipItem.createAttributeModifiers(ToolMaterials.NETHERITE, 4, 3f))));
     public static final Item RIFLE_HALBERD = registerItem("rifle_halberd",

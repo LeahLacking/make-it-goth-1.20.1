@@ -23,6 +23,7 @@ public class ModModelProvider extends FabricModelProvider {
 
 
         registerFacingBlock(gen, ModBlocks.EMPTY_BEER_CUP);
+        registerFacingBlock(gen, ModBlocks.PUMPKIN_RUM);
 
         BlockStateModelGenerator.BlockTexturePool rotwoodPool = gen.registerCubeAllModelTexturePool(ModBlocks.ROTWOOD_PLANKS);
         BlockStateModelGenerator.BlockTexturePool gothstoneBrickPool = gen.registerCubeAllModelTexturePool(ModBlocks.GOTHSTONE_BRICKS);

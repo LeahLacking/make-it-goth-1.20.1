@@ -13,7 +13,7 @@ import net.minecraft.world.BlockView;
 
 public class EmptyBeerCup extends HorizontalFacingBlock {
     MapCodec<EmptyBeerCup> CODEC = EmptyBeerCup.createCodec(EmptyBeerCup::new);
-    VoxelShape BASE_SHAPE = VoxelShapes.union(LecternBlock.BOTTOM_SHAPE, LecternBlock.MIDDLE_SHAPE); // this is just stole from the lectern
+    VoxelShape BASE_SHAPE = VoxelShapes.union(LecternBlock.BASE_SHAPE); // this is just stole from the lectern
     VoxelShape NORTH_SHAPE = BASE_SHAPE;
     VoxelShape SOUTH_SHAPE = Helper.rotateVoxelShape(1, BASE_SHAPE);
     VoxelShape EAST_SHAPE = Helper.rotateVoxelShape(2, BASE_SHAPE);
