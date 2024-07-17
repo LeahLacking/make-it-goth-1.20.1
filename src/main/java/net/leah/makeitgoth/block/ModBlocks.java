@@ -25,14 +25,14 @@ public class ModBlocks {
 
     //gothstone blocks
     public static final Block GOTHSTONE_BRICKS = registerBlock("gothstone_bricks",
-            new Block(copySettings(Blocks.STONE_BRICKS).nonOpaque()));
+            new Block(copySettings(Blocks.STONE_BRICKS)));
 
     public static final Block GOTHSTONE = registerBlock("gothstone",
-            new Block(copySettings(Blocks.STONE_BRICKS).nonOpaque()));
+            new Block(copySettings(Blocks.STONE_BRICKS)));
 
     // steel related blocks
     public static final Block STEEL_BLOCK = registerBlock("steel_block",
-            new Block(copySettings(Blocks.IRON_BLOCK).nonOpaque()));
+            new Block(copySettings(Blocks.IRON_BLOCK)));
 
     public static final Block STEEL_GRATE = registerBlock("steel_grate",
             new Block(copySettings(Blocks.IRON_BLOCK).nonOpaque()));
@@ -42,10 +42,10 @@ public class ModBlocks {
 
     // rotwood blocks
     public static final Block ROTWOOD_PLANKS = registerBlock("rotwood_planks",
-            new Block(copySettings(Blocks.OAK_PLANKS).nonOpaque()));
+            new Block(copySettings(Blocks.OAK_PLANKS)));
 
     public static final Block ROTWOOD_LOG = registerBlock("rotwood_log",
-            new PillarBlock(copySettings(Blocks.OAK_LOG).nonOpaque()));
+            new PillarBlock(copySettings(Blocks.OAK_LOG)));
 
     public static final Block ROTWOOD_WOOD = registerBlock("rotwood_wood",
             new PillarBlock(copySettings(Blocks.OAK_WOOD)));
