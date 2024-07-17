@@ -20,6 +20,7 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator gen) { //generates the Block models and textures
 
+        gen.excludeFromSimpleItemModelGeneration(ModBlocks.PUMPKIN_RUM);
 
 
         registerFacingBlock(gen, ModBlocks.EMPTY_BEER_CUP);

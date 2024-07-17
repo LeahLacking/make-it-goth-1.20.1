@@ -6,6 +6,7 @@ import net.leah.makeitgoth.block.ModBlocks;
 import net.leah.makeitgoth.effect.ModEffects;
 import net.leah.makeitgoth.item.ModItemGroups;
 import net.leah.makeitgoth.item.ModItems;
+import net.leah.makeitgoth.worldgen.ModBiomeModifications;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,6 +21,7 @@ public class MakeItGoth implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlock();
 		ModEffects.registerModEffects();
+		ModBiomeModifications.init();
 
 		LOGGER.info("Hello Fabric world!");
 	}
