@@ -14,7 +14,7 @@ public interface Helper {
     static VoxelShape rotateVoxelShape(int times, VoxelShape shape) {
         VoxelShape[] shapes = new VoxelShape[]{shape, VoxelShapes.empty()};
         for (int i = 0; i < times; i++) {
-            shape.forEachBox((minX, minY, minZ, maxX, maxY, maxZ) ->
+            shapes[0].forEachBox((minX, minY, minZ, maxX, maxY, maxZ) ->
                     shapes[1] = VoxelShapes.union(shapes[1], VoxelShapes.cuboid(1 - maxZ, minY, minX, 1 - minZ, maxY, maxX))
             );
             shapes[0] = shapes[1];
