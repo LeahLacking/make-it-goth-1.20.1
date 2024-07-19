@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "makeitgoth:block/pumpkin_rum",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "makeitgoth:block/pumpkin_rum"
+    },
+    "facing=south": {
+      "model": "makeitgoth:block/pumpkin_rum",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "makeitgoth:block/pumpkin_rum",
+      "y": 270
+    }
+  }
+}
