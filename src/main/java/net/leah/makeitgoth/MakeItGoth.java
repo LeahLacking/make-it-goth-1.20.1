@@ -23,7 +23,6 @@ public class MakeItGoth implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlock();
 		ModBlockEntities.registerBlockEntities();
-		ModScreenHandler.registerScreenHandlers();
 		ModEffects.registerModEffects();
 		ModBiomeModifications.init();
 

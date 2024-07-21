@@ -42,7 +42,6 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ROTWOOD_FENCE_GATE);
                         entries.add(ModBlocks.EMPTY_BEER_CUP);
                         entries.add(ModBlocks.PUMPKIN_RUM);
-                        entries.add(ModBlocks.BEER_BREWING_STAND);
 
                     }).build());
 
