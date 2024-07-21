@@ -13,11 +13,6 @@ public class ModBlockEntities {
                     BlockEntityType.Builder.create(FogThingyBlockEntity::new,
                             ModBlocks.FOG_THINGY_BLOCK).build());
 
-    public static final BlockEntityType<BeerBrewingStandBlockEntity> BEER_BREWING_STAND_BLOCK_ENTITY =
-            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(MakeItGoth.MOD_ID, "beer_brewing_stand_block_entity"),
-                    BlockEntityType.Builder.create(BeerBrewingStandBlockEntity::new,
-                            ModBlocks.BEER_BREWING_STAND).build());
-
     public static void registerBlockEntities() {
         MakeItGoth.LOGGER.info("Registering Block Entities for " + MakeItGoth.MOD_ID);
     }

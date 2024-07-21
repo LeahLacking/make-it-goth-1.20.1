@@ -7,6 +7,7 @@ import net.leah.makeitgoth.block.entity.ModBlockEntities;
 import net.leah.makeitgoth.effect.ModEffects;
 import net.leah.makeitgoth.item.ModItemGroups;
 import net.leah.makeitgoth.item.ModItems;
+import net.leah.makeitgoth.screen.ModScreenHandler;
 import net.leah.makeitgoth.worldgen.ModBiomeModifications;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
@@ -22,6 +23,7 @@ public class MakeItGoth implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlock();
 		ModBlockEntities.registerBlockEntities();
+		ModScreenHandler.registerScreenHandlers();
 		ModEffects.registerModEffects();
 		ModBiomeModifications.init();
 
