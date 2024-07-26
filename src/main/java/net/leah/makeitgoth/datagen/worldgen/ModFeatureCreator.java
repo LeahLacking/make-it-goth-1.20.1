@@ -1,4 +1,4 @@
-package net.leah.makeitgoth.datagen;
+package net.leah.makeitgoth.datagen.worldgen;
 
 import net.leah.makeitgoth.block.ModBlocks;
 import net.minecraft.registry.Registerable;

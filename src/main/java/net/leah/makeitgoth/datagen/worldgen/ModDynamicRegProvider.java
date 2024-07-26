@@ -1,4 +1,4 @@
-package net.leah.makeitgoth.datagen;
+package net.leah.makeitgoth.datagen.worldgen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricDynamicRegistryProvider;

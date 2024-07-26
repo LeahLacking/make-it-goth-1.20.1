@@ -3,6 +3,10 @@ package net.leah.makeitgoth;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.leah.makeitgoth.datagen.*;
+import net.leah.makeitgoth.datagen.tag.ModBlockTagProvider;
+import net.leah.makeitgoth.datagen.tag.ModItemTagProvider;
+import net.leah.makeitgoth.datagen.worldgen.ModDynamicRegProvider;
+import net.leah.makeitgoth.datagen.worldgen.ModFeatureCreator;
 import net.minecraft.registry.RegistryBuilder;
 import net.minecraft.registry.RegistryKeys;
 
@@ -16,15 +20,11 @@ public class MakeItGothDataGenerator implements DataGeneratorEntrypoint {
         pack.addProvider(ModModelProvider::new);
         pack.addProvider(ModEnLangProvider::new);
         pack.addProvider(ModDynamicRegProvider::new);
+        pack.addProvider(ModRecipesProvider::new);
+        pack.addProvider(ModBlockLootTablesProvider::new);
 
-        // this looks complicated, but is here for laziness’s sake
-        // I like I have no idea how to make this look better
-        AtomicReference<ModBlockTagProvider> blockTags = new AtomicReference<>();
-        pack.addProvider(((output, reg) -> {
-            blockTags.set(new ModBlockTagProvider(output, reg));
-            return blockTags.get();
-        }));
-        pack.addProvider(((output, reg) -> new ModItemTagProvider(output, reg, blockTags.get())));
+        ModBlockTagProvider blockTags=  pack.addProvider(ModBlockTagProvider::new);
+        pack.addProvider(((output, reg) -> new ModItemTagProvider(output, reg, blockTags)));
 
     }
 
