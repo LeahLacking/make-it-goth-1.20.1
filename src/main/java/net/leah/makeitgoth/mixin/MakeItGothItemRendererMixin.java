@@ -29,6 +29,9 @@ public abstract class MakeItGothItemRendererMixin {
         if (stack.isOf(ModItems.RIFLE_HALBERD) && renderMode != ModelTransformationMode.HEAD) {
             return this.models.getModelManager().getModel(new ModelIdentifier(id("rifle_halberd_3d"), "inventory"));
         }
+        if (stack.isOf(ModItems.RUSTED_SCYTHE) && renderMode != ModelTransformationMode.HEAD) {
+            return this.models.getModelManager().getModel(new ModelIdentifier(id("rusted_scythe_3d"), "inventory"));
+        }
         if (stack.isOf(ModItems.WHEEL_SAW) && renderMode != ModelTransformationMode.HEAD) {
             return this.models.getModelManager().getModel(new ModelIdentifier(id("wheel_saw_3d"), "inventory"));
         }

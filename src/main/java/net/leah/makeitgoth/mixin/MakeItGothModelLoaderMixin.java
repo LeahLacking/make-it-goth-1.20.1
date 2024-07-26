@@ -22,5 +22,6 @@ public abstract class MakeItGothModelLoaderMixin {
     public void loadCustomModels(BlockColors blockColors, Profiler profiler, Map jsonUnbakedModels, Map blockStates, CallbackInfo ci) {
         this.loadItemModel(new ModelIdentifier(id("rifle_halberd_3d"), "inventory"));
         this.loadItemModel(new ModelIdentifier(id("wheel_saw_3d"), "inventory"));
+        this.loadItemModel(new ModelIdentifier(id("rusted_scythe_3d"), "inventory"));
     }
 }

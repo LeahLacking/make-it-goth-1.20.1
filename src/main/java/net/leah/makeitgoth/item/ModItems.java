@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.leah.makeitgoth.MakeItGoth;
 import net.leah.makeitgoth.block.ModBlocks;
 import net.leah.makeitgoth.item.custom.BleedItem;
+import net.leah.makeitgoth.item.custom.BlindItem;
 import net.leah.makeitgoth.item.custom.ChipItem;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
@@ -27,6 +28,9 @@ public class ModItems {
             new BlockItem(ModBlocks.PUMPKIN_RUM, new Item.Settings().food(ModFoodComponents.STEEL_INGOT)));
     public static final Item WHEEL_SAW = registerItem("wheel_saw", new ChipItem(
             ToolMaterials.NETHERITE, new Item.Settings().attributeModifiers(ChipItem.createAttributeModifiers(ToolMaterials.NETHERITE, 4, 3f))));
+
+    public static final Item RUSTED_SCYTHE = registerItem("rusted_scythe", new BlindItem(
+            ToolMaterials.NETHERITE, new Item.Settings().attributeModifiers(ChipItem.createAttributeModifiers(ToolMaterials.NETHERITE, 4, -1.5f))));
     public static final Item RIFLE_HALBERD = registerItem("rifle_halberd",
             new BleedItem(ToolMaterials.DIAMOND, new Item.Settings().attributeModifiers(BleedItem.createAttributeModifiers(ToolMaterials.DIAMOND, 4, -3f))));
     public static final Item RUSTED_TWINBLADES = registerItem("rusted_twinblades",
