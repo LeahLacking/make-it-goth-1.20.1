@@ -7,6 +7,10 @@
     "makeitgoth:gothstone",
     "makeitgoth:gothstone_stairs",
     "makeitgoth:gothstone_slab",
-    "makeitgoth:gothstone_wall"
+    "makeitgoth:gothstone_wall",
+    "makeitgoth:gothstone_brick_button",
+    "makeitgoth:steel_block",
+    "makeitgoth:test_bars",
+    "makeitgoth:steel_grate"
   ]
 }

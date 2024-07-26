@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "c": {
+      "item": "minecraft:iron_nugget"
+    },
+    "x": {
+      "item": "minecraft:spruce_planks"
+    }
+  },
+  "pattern": [
+    "   ",
+    "cxc",
+    " c "
+  ],
+  "result": {
+    "count": 4,
+    "id": "makeitgoth:empty_beer_cup"
+  }
+}

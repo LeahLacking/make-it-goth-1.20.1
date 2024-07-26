@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "r": {
+      "item": "minecraft:oak_log"
+    },
+    "x": {
+      "item": "minecraft:rotten_flesh"
+    }
+  },
+  "pattern": [
+    "xxx",
+    "xrx",
+    "xxx"
+  ],
+  "result": {
+    "count": 6,
+    "id": "makeitgoth:rotwood_log"
+  }
+}

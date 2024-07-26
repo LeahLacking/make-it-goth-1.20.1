@@ -1,0 +1,30 @@
+{
+
+  "block.makeitgoth.gothstone": "Gothstone",
+  "block.makeitgoth.gothstone_stairs": "Gothstone Stairs",
+  "block.makeitgoth.gothstone_slab": "Gothstone Slab",
+  "block.makeitgoth.gothstone_wall": "Gothstone Wall",
+  "block.makeitgoth.gothstone_bricks": "Gothstone Bricks",
+  "block.makeitgoth.gothstone_brick_slab": "Gothstone Brick Slab",
+  "block.makeitgoth.gothstone_brick_stairs": "Gothstone Brick Stairs",
+  "block.makeitgoth.gothstone_brick_wall": "Gothstone Brick Wall",
+  "block.makeitgoth.gothstone_brick_button": "Gothstone Brick Button",
+  "block.makeitgoth.rotwood_log": "Rotwood Log",
+  "block.makeitgoth.rotwood_planks": "Rotwood Planks",
+  "block.makeitgoth.rotwood_stairs": "Rotwood Stairs",
+  "block.makeitgoth.rotwood_slab": "Rotwood Slab",
+  "block.makeitgoth.rotwood_fence": "Rotwood Fence",
+  "block.makeitgoth.rotwood_fence_gate": "Rotwood Fence Gate",
+  "block.makeitgoth.rotwood_pressure_plate": "Rotwood Pressure Plate",
+  "block.makeitgoth.rotwood_button": "Rotwood Button",
+  "block.makeitgoth.steel_block": "Steel Block",
+  "block.makeitgoth.steel_grate": "Steel Grate",
+  "block.makeitgoth.test_bars": "Steel Bars",
+  "item.makeitgoth.steel_ingot": "Steel Ingot",
+  "item.makeitgoth.wheel_saw": "Wheel Saw",
+  "item.makeitgoth.rifle_halberd": "Rifle Halberd",
+  "item.makeitgoth.rusted_scythe": "Rusted Scythe",
+  "block.makeitgoth.empty_beer_cup": "Empty Beer Cup",
+
+  "itemgroup.makeitgoth": "MakeItGoth!"
+}

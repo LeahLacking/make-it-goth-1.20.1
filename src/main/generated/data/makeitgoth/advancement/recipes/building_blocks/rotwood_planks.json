@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_rotwood_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "makeitgoth:rotwood_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "makeitgoth:rotwood_planks"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_rotwood_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "makeitgoth:rotwood_planks"
+    ]
+  }
+}

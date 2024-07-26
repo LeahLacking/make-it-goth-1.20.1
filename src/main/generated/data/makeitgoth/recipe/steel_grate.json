@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "x": {
+      "item": "makeitgoth:steel_ingot"
+    }
+  },
+  "pattern": [
+    "  ",
+    "xx",
+    "xx"
+  ],
+  "result": {
+    "count": 6,
+    "id": "makeitgoth:steel_grate"
+  }
+}

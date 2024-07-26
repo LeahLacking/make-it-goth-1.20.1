@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "c": {
+      "item": "minecraft:iron_ingot"
+    },
+    "s": {
+      "item": "makeitgoth:steel_ingot"
+    },
+    "x": {
+      "item": "minecraft:stick"
+    },
+    "z": {
+      "item": "minecraft:ancient_debris"
+    }
+  },
+  "pattern": [
+    "scx",
+    " x ",
+    "xzs"
+  ],
+  "result": {
+    "count": 1,
+    "id": "makeitgoth:rusted_scythe"
+  }
+}

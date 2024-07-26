@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "c": {
+      "item": "minecraft:stick"
+    },
+    "f": {
+      "item": "minecraft:coal_block"
+    },
+    "s": {
+      "item": "makeitgoth:steel_ingot"
+    }
+  },
+  "pattern": [
+    " cs",
+    "fc ",
+    "ssf"
+  ],
+  "result": {
+    "count": 1,
+    "id": "makeitgoth:rifle_halberd"
+  }
+}

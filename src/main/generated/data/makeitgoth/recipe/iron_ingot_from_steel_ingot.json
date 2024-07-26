@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "makeitgoth:steel_ingot"
+  },
+  "result": {
+    "id": "makeitgoth:steel_ingot"
+  }
+}

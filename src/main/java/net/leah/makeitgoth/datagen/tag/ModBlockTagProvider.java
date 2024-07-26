@@ -26,19 +26,57 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                         GOTHSTONE,
                         GOTHSTONE_STAIRS,
                         GOTHSTONE_SLAB,
-                        GOTHSTONE_WALL
+                        GOTHSTONE_WALL,
+                        GOTHSTONE_BRICK_BUTTON,
+                        STEEL_BLOCK,
+                        TEST_BARS,
+                        STEEL_GRATE
+
                 );
 
 
-//        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE);
+       getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
         //all blocks mineable by axe
+                .add(
+                        ROTWOOD_LOG,
+                        ROTWOOD_PLANKS,
+                        ROTWOOD_STAIRS,
+                        ROTWOOD_SLAB,
+                        ROTWOOD_FENCE,
+                        ROTWOOD_FENCE_GATE,
+                        ROTWOOD_PRESSURE_PLATE,
+                        ROTWOOD_BUTTON
 
 
-//        getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL);
-        //all blocks needing a iron tool
+                );
+
+
+      getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
+        //all blocks needing an iron tool
+                .add(
+                        STEEL_BLOCK,
+                        STEEL_GRATE,
+                        TEST_BARS
+                );
+
+               getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
+        //all blocks needing an stone tool
+                .add(
+
+                        GOTHSTONE,
+                        GOTHSTONE_STAIRS,
+                        GOTHSTONE_SLAB,
+                        GOTHSTONE_WALL,
+                        GOTHSTONE_BRICKS,
+                        GOTHSTONE_BRICK_STAIRS,
+                        GOTHSTONE_BRICK_SLAB,
+                        GOTHSTONE_BRICK_WALL,
+                        GOTHSTONE_BRICK_BUTTON
+
+                );
 
 //        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL);
-        //all blocks needing a diamond tool
+        //all blocks needing an diamond tool
 
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)

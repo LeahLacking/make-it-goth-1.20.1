@@ -19,12 +19,12 @@ public class MakeItGoth implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlock();
 		ModBlockEntities.registerBlockEntities();
 		ModEffects.registerModEffects();
 		ModBiomeModifications.init();
+		ModItemGroups.registerItemGroups();
 
 		LOGGER.info("Hello Fabric world!");
 	}

@@ -18,7 +18,6 @@ public class MakeItGothDataGenerator implements DataGeneratorEntrypoint {
         FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
         pack.addProvider(ModModelProvider::new);
-        pack.addProvider(ModEnLangProvider::new);
         pack.addProvider(ModDynamicRegProvider::new);
         pack.addProvider(ModRecipesProvider::new);
         pack.addProvider(ModBlockLootTablesProvider::new);
