@@ -10,12 +10,15 @@
     },
     "x": {
       "item": "minecraft:stick"
+    },
+    "n": {
+      "item": "minecraft:netherite_scrap"
     }
   },
   "pattern": [
-    "sxs",
-    "xcx",
-    "sxs"
+    "scs",
+    "xnx",
+    "scs"
   ],
   "result": {
     "count": 1,

@@ -27,12 +27,12 @@ public class ModItems {
             // This is how you add food components to an item
             new BlockItem(ModBlocks.PUMPKIN_RUM, new Item.Settings().food(ModFoodComponents.STEEL_INGOT)));
     public static final Item WHEEL_SAW = registerItem("wheel_saw", new ChipItem(
-            ToolMaterials.NETHERITE, new Item.Settings().attributeModifiers(ChipItem.createAttributeModifiers(ToolMaterials.NETHERITE, 4, 3f))));
+            ToolMaterials.NETHERITE, new Item.Settings().attributeModifiers(ChipItem.createAttributeModifiers(ToolMaterials.NETHERITE, 4, -3f))));
 
     public static final Item RUSTED_SCYTHE = registerItem("rusted_scythe", new BlindItem(
-            ToolMaterials.NETHERITE, new Item.Settings().attributeModifiers(ChipItem.createAttributeModifiers(ToolMaterials.NETHERITE, 4, -1.5f))));
+            ToolMaterials.NETHERITE, new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(ToolMaterials.NETHERITE, 2.5f, -2.1f))));
     public static final Item RIFLE_HALBERD = registerItem("rifle_halberd",
-            new BleedItem(ToolMaterials.DIAMOND, new Item.Settings().attributeModifiers(BleedItem.createAttributeModifiers(ToolMaterials.DIAMOND, 4, -3f))));
+            new BleedItem(ToolMaterials.DIAMOND, new Item.Settings().attributeModifiers(BleedItem.createAttributeModifiers(ToolMaterials.DIAMOND, 2.5f, -3f))));
     public static final Item RUSTED_TWINBLADES = registerItem("rusted_twinblades",
             new SwordItem(ToolMaterials.DIAMOND, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.DIAMOND, 3, -2))));
 
