@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.leah.makeitgoth.block.ModBlocks;
 import net.leah.makeitgoth.item.ModItems;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.CookingRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
@@ -25,6 +26,16 @@ public class ModRecipesProvider extends FabricRecipeProvider {
 
     @Override
     public void generate(RecipeExporter exporter) {
+       //gothstone
+        ShapedRecipeJsonBuilder.create(BUILDING_BLOCKS, ModBlocks.GOTHSTONE, 8)
+                .pattern("   ")
+                .pattern(" ts")
+                .pattern(" st")
+                .input('s', Blocks.COBBLESTONE)
+                .input('t', Blocks.TUFF)
+                .criterion(hasItem(ModBlocks.GOTHSTONE), conditionsFromItem(ModBlocks.GOTHSTONE))
+                .offerTo(exporter);
+
         ShapedRecipeJsonBuilder.create(BUILDING_BLOCKS, ModBlocks.GOTHSTONE_STAIRS, 6)
                 .pattern("  x")
                 .pattern(" xx")

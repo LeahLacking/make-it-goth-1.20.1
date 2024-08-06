@@ -3,6 +3,7 @@ package net.leah.makeitgoth.datagen.tag;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.leah.makeitgoth.data.ModTags;
+import net.leah.makeitgoth.item.ModItems;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.ItemTags;
@@ -18,6 +19,10 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup arg) {
 //        getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR);
         //Tag for trimmable armor
+
+        getOrCreateTagBuilder(ItemTags.DURABILITY_ENCHANTABLE)
+                .add(ModItems.RUSTED_SCYTHE);
+
 
 //        getOrCreateTagBuilder(ItemTags.CREEPER_DROP_MUSIC_DISCS);
         //Tag so that creepers drop siad music disc

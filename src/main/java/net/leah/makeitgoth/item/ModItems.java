@@ -33,8 +33,7 @@ public class ModItems {
             ToolMaterials.NETHERITE, new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(ToolMaterials.NETHERITE, 2.5f, -2.1f))));
     public static final Item RIFLE_HALBERD = registerItem("rifle_halberd",
             new BleedItem(ToolMaterials.DIAMOND, new Item.Settings().attributeModifiers(BleedItem.createAttributeModifiers(ToolMaterials.DIAMOND, 2.5f, -3f))));
-    public static final Item RUSTED_TWINBLADES = registerItem("rusted_twinblades",
-            new SwordItem(ToolMaterials.DIAMOND, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.DIAMOND, 3, -2))));
+
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
 
