@@ -16,6 +16,7 @@ import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
 public class BeerBrewingStand extends BlockWithEntity implements BlockEntityProvider {
+    //
     public static final MapCodec<BeerBrewingStand> CODEC = createCodec(BeerBrewingStand::new);
     public BeerBrewingStand(Settings settings) {
         super(settings);
