@@ -1,7 +1,9 @@
 package net.leah.makeitgoth.block;
 
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.leah.makeitgoth.MakeItGoth;
+import net.leah.makeitgoth.block.custom.BeerBrewingStand;
 import net.leah.makeitgoth.block.custom.EmptyBeerCup;
 import net.leah.makeitgoth.block.custom.FogThingy;
 import net.leah.makeitgoth.block.custom.SteelBars;
@@ -17,6 +19,9 @@ import static net.leah.makeitgoth.MakeItGoth.id;
 public class ModBlocks {
 
 
+    //BeerBrewingStand
+    public static final Block BeerBrewingStandBlock = registerBlock("beer_brewing_stand",
+            new BeerBrewingStand(copySettings(Blocks.IRON_BLOCK).nonOpaque()));
 
     public static final Block FOG_THINGY_BLOCK = registerBlock("fog_thingy_block",
             new FogThingy(true, 5, copySettings(Blocks.IRON_BLOCK)));

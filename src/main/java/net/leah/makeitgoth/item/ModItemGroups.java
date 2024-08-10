@@ -40,6 +40,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ROTWOOD_PRESSURE_PLATE);
                         entries.add(ModBlocks.ROTWOOD_FENCE);
                         entries.add(ModBlocks.ROTWOOD_FENCE_GATE);
+                        entries.add(ModBlocks.BeerBrewingStandBlock);
                         entries.add(ModBlocks.EMPTY_BEER_CUP);
                         entries.add(ModBlocks.PUMPKIN_RUM);
 
