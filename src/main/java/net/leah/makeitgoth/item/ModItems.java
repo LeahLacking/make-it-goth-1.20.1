@@ -12,12 +12,12 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 
 import static net.leah.makeitgoth.MakeItGoth.id;
 
 public class ModItems {
     public static ArrayList<Item> creativeTabItems = new ArrayList<>();
+    
 
     public static final Item STEEL_INGOT = registerItem("steel_ingot",
             // This is how you add food components to an item

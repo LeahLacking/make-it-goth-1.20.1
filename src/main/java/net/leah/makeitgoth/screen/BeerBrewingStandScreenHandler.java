@@ -26,9 +26,9 @@ public class BeerBrewingStandScreenHandler extends ScreenHandler {
         checkDataCount(propertyDelegate, 2);
         this.inventory = inventory;
         this.propertyDelegate = propertyDelegate;
-        this.addSlot(new BeerBrewingStandScreenHandler.IngredientSlot(inventory, 0, 56, 17));
+        this.addSlot(new BeerBrewingStandScreenHandler.IngredientSlot(inventory, 0, 56, 10));
         this.addSlot(new BeerBrewingStandScreenHandler.IngredientSlot(inventory, 1, 79, 17));
-        this.addSlot(new BeerBrewingStandScreenHandler.IngredientSlot(inventory, 2, 102, 17));
+        this.addSlot(new BeerBrewingStandScreenHandler.IngredientSlot(inventory, 2, 102, 10));
         this.addSlot(new BeerBrewingStandScreenHandler.LiquidContainerSlot(inventory, 3, 79, 58));
         this.addProperties(propertyDelegate);
 
