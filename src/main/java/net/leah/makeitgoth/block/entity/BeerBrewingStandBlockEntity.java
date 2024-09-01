@@ -7,12 +7,14 @@ import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventories;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.listener.ClientPlayPacketListener;
 import net.minecraft.network.packet.Packet;
 import net.minecraft.network.packet.s2c.play.BlockEntityUpdateS2CPacket;
+import net.minecraft.potion.Potions;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.PropertyDelegate;
@@ -101,29 +103,37 @@ public class BeerBrewingStandBlockEntity extends BlockEntity implements NamedScr
         boolean bl;
         if (itemStackout.isEmpty() && itemStack1.isEmpty() && itemStack2.isEmpty() && itemStack3.isEmpty()) {
             bl=false;
-        } else if (itemStackout.isOf(ModBlocks.EMPTY_BEER_CUP.asItem()) && itemStack1.isOf(Items.WATER_BUCKET) || itemStack2.isOf(Items.WHEAT) && itemStack3.isEmpty()) {
+        } else if (itemStackout.isOf(ModBlocks.EMPTY_BEER_CUP.asItem()) && itemStack1.isOf(Items.WATER_BUCKET) && itemStack2.isOf(Items.WHEAT) && itemStack3.isEmpty()) {
             bl=true;
-        } else if (itemStackout.isOf(ModBlocks.EMPTY_BEER_CUP.asItem()) && itemStack1.isOf(Items.WHEAT) || itemStack2.isOf(Items.WATER_BUCKET) && itemStack3.isEmpty()) {
+        } else if (itemStackout.isOf(ModBlocks.EMPTY_BEER_CUP.asItem()) && itemStack1.isOf(Items.WHEAT) && itemStack2.isOf(Items.WATER_BUCKET) && itemStack3.isEmpty()) {
             bl=true;
-        } else if (itemStackout.isOf(ModBlocks.EMPTY_BEER_CUP.asItem()) && itemStack1.isEmpty() || itemStack2.isOf(Items.WHEAT) && itemStack3.isOf(Items.WATER_BUCKET)) {
+        } else if (itemStackout.isOf(ModBlocks.EMPTY_BEER_CUP.asItem()) && itemStack1.isEmpty() && itemStack2.isOf(Items.WHEAT) && itemStack3.isOf(Items.WATER_BUCKET)) {
             bl=true;
-        } else if (itemStackout.isOf(ModBlocks.EMPTY_BEER_CUP.asItem()) && itemStack1.isEmpty() || itemStack2.isOf(Items.WATER_BUCKET) && itemStack3.isOf(Items.WHEAT)) {
+        } else if (itemStackout.isOf(ModBlocks.EMPTY_BEER_CUP.asItem()) && itemStack1.isEmpty() && itemStack2.isOf(Items.WATER_BUCKET) && itemStack3.isOf(Items.WHEAT)) {
             bl = true;
-        } else if (itemStackout.isOf(ModBlocks.EMPTY_BEER_CUP.asItem()) && itemStack1.isOf(Items.WATER_BUCKET) || itemStack2.isOf(Items.NETHER_WART) && itemStack3.isOf(Items.PUMPKIN)) {
+        } else if (itemStackout.isOf(ModBlocks.EMPTY_BEER_CUP.asItem()) && itemStack1.isEmpty() && itemStack2.isOf(Items.NETHER_WART) && itemStack3.isOf(Items.PUMPKIN)) {
             bl=true;
-        } else if (itemStackout.isOf(ModBlocks.EMPTY_BEER_CUP.asItem()) && itemStack1.isOf(Items.NETHER_WART) || itemStack2.isOf(Items.WATER_BUCKET) && itemStack3.isOf(Items.PUMPKIN)) {
+        } else if (itemStackout.isOf(ModBlocks.EMPTY_BEER_CUP.asItem()) && itemStack1.isOf(Items.NETHER_WART) && itemStack2.isEmpty() && itemStack3.isOf(Items.PUMPKIN)) {
             bl=true;
-        } else if (itemStackout.isOf(ModBlocks.EMPTY_BEER_CUP.asItem()) && itemStack1.isOf(Items.PUMPKIN) || itemStack2.isOf(Items.NETHER_WART) && itemStack3.isOf(Items.WATER_BUCKET)) {
+        } else if (itemStackout.isOf(ModBlocks.EMPTY_BEER_CUP.asItem()) && itemStack1.isOf(Items.PUMPKIN) && itemStack2.isOf(Items.NETHER_WART) && itemStack3.isEmpty()) {
             bl=true;
-        } else bl = itemStackout.isOf(ModBlocks.EMPTY_BEER_CUP.asItem()) && itemStack1.isOf(Items.PUMPKIN) || itemStack2.isOf(Items.WATER_BUCKET) && itemStack3.isOf(Items.NETHER_WART);
+        } else bl = itemStackout.isOf(ModBlocks.EMPTY_BEER_CUP.asItem()) && itemStack1.isOf(Items.PUMPKIN) && itemStack2.isEmpty() && itemStack3.isOf(Items.NETHER_WART);
 
         return bl;
     }
 
     private static void craft(World world, BlockPos pos, DefaultedList<ItemStack> slots) {
-
+        ItemStack Result = null;
 
         for (int i = 0; i < 2; i++) {
+            if(slots.get(i).isOf(Items.WHEAT)){
+                Result= ModBlocks.BEER.asItem().getDefaultStack();
+            }
+            else if (slots.get(i).isOf(Items.NETHER_WART)) {
+                Result= ModBlocks.PUMPKIN_RUM.asItem().getDefaultStack();
+            }
+
+
             if (slots.get(i).isOf(Items.WATER_BUCKET)){
                 slots.set(i,Items.BUCKET.getDefaultStack());
             }else {
@@ -132,7 +142,8 @@ public class BeerBrewingStandBlockEntity extends BlockEntity implements NamedScr
 
         }
 
-        slots.set(3, ModBlocks.PUMPKIN_RUM.asItem().getDefaultStack());
+
+        slots.set(3, Result);
         world.syncWorldEvent(1035, pos, 0);
     }
 

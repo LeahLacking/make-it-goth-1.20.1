@@ -43,6 +43,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.BeerBrewingStandBlock);
                         entries.add(ModBlocks.EMPTY_BEER_CUP);
                         entries.add(ModBlocks.PUMPKIN_RUM);
+                        entries.add(ModBlocks.BEER);
 
                     }).build());
 

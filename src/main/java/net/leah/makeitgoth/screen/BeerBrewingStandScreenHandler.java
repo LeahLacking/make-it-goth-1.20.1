@@ -5,8 +5,10 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.inventory.SimpleInventory;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.potion.Potions;
 import net.minecraft.screen.*;
 import net.minecraft.screen.slot.Slot;
 
@@ -115,7 +117,7 @@ public class BeerBrewingStandScreenHandler extends ScreenHandler {
         }
 
         public static boolean matches(ItemStack stack) {
-            return stack.isOf(ModBlocks.EMPTY_BEER_CUP.asItem()) || stack.isOf(ModBlocks.PUMPKIN_RUM.asItem());
+            return stack.isOf(ModBlocks.EMPTY_BEER_CUP.asItem()) || stack.isOf(ModBlocks.PUMPKIN_RUM.asItem()) || stack.isOf(ModBlocks.BEER.asItem());
         }
     }
 
@@ -130,7 +132,7 @@ public class BeerBrewingStandScreenHandler extends ScreenHandler {
         }
 
         public static boolean matches(ItemStack stack) {
-            return stack.isOf(Items.WATER_BUCKET) || stack.isOf(Items.WHEAT);
+            return stack.isOf(Items.WATER_BUCKET) || stack.isOf(Items.WHEAT) || stack.isOf(Items.PUMPKIN) || stack.isOf(Items.NETHER_WART);
         }
     }
 

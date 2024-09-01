@@ -33,6 +33,9 @@ public class ModBlocks {
     public static final Block PUMPKIN_RUM = registerBlock("pumpkin_rum",
             new EmptyBeerCup(copySettings(Blocks.LANTERN).nonOpaque()));
 
+    public static final Block BEER = registerBlock("beer",
+            new EmptyBeerCup(copySettings(Blocks.LANTERN).nonOpaque()));
+
 
     //gothstone blocks
     public static final Block GOTHSTONE_BRICKS = registerBlock("gothstone_bricks",

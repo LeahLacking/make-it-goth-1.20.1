@@ -26,6 +26,11 @@ public class ModItems {
     public static final Item PUMPKIN_RUM_ITEM = registerItem("pumpkin_rum_item",
             // This is how you add food components to an item
             new BlockItem(ModBlocks.PUMPKIN_RUM, new Item.Settings().food(ModFoodComponents.STEEL_INGOT)));
+
+    public static final Item BEER_ITEM = registerItem("beer_item",
+            // This is how you add food components to an item
+            new BlockItem(ModBlocks.BEER, new Item.Settings().food(ModFoodComponents.STEEL_INGOT)));
+
     public static final Item WHEEL_SAW = registerItem("wheel_saw", new ChipItem(
             ToolMaterials.NETHERITE, new Item.Settings().attributeModifiers(ChipItem.createAttributeModifiers(ToolMaterials.NETHERITE, 4, -3f))));
 

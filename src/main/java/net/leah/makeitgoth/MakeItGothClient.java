@@ -1,5 +1,6 @@
 package net.leah.makeitgoth;
 
+import com.jcraft.jorbis.Block;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.leah.makeitgoth.block.ModBlocks;
@@ -17,6 +18,7 @@ public class MakeItGothClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.TEST_BARS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.EMPTY_BEER_CUP, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PUMPKIN_RUM, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BEER,RenderLayer.getCutout());
 
 
         HandledScreens.register(ModScreenHandlers.BEER_BREWING_STAND_SCREEN_HANDLER, BeerBrewingScreen::new);
