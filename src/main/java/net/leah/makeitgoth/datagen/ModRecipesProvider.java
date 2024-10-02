@@ -119,8 +119,8 @@ public class ModRecipesProvider extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, BUILDING_BLOCKS, GOTHSTONE_BRICKS, GOTHSTONE);
 
         ShapedRecipeJsonBuilder.create(BUILDING_BLOCKS, GOTHSTONE_BRICK_STAIRS, 6)
-                .pattern("  x")
-                .pattern(" xx")
+                .pattern("x  ")
+                .pattern("xx ")
                 .pattern("xxx")
                 .input('x', GOTHSTONE_BRICKS)
                 .criterion(hasItem(GOTHSTONE_BRICKS), conditionsFromItem(GOTHSTONE_BRICKS))
@@ -148,11 +148,11 @@ public class ModRecipesProvider extends FabricRecipeProvider {
 
     void steelRecipes(RecipeExporter exporter) {
         // Steel Ingots
-        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(STEEL_INGOT), BUILDING_BLOCKS, STEEL_INGOT, .1f, 200)
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.IRON_INGOT), BUILDING_BLOCKS, STEEL_INGOT, .1f, 200)
                 .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
                 .offerTo(exporter, getSmeltingItemPath(STEEL_INGOT));
         // Blasting Example (as you see the faster time is set manually)
-        CookingRecipeJsonBuilder.createBlasting(Ingredient.ofItems(STEEL_INGOT), BUILDING_BLOCKS, STEEL_INGOT, .1f, 100)
+        CookingRecipeJsonBuilder.createBlasting(Ingredient.ofItems(Items.IRON_INGOT), BUILDING_BLOCKS, STEEL_INGOT, .1f, 100)
                 .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
                 .offerTo(exporter, getBlastingItemPath(STEEL_INGOT));
 
@@ -166,6 +166,7 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .input('x', STEEL_BLOCK)
                 .criterion(hasItem(STEEL_INGOT), conditionsFromItem(STEEL_INGOT))
                 .offerTo(exporter);
+        offerStonecuttingRecipe(exporter, BUILDING_BLOCKS, STEEL_GRATE, STEEL_INGOT, 4);
 
         ShapedRecipeJsonBuilder.create(BUILDING_BLOCKS, STEEL_BARS, 16)
                 .pattern("xxx")
