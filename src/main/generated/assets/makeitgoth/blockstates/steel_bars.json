@@ -2,11 +2,6 @@
   "multipart": [
     {
       "apply": {
-        "model": "makeitgoth:block/steel_bars_post_ends"
-      }
-    },
-    {
-      "apply": {
         "model": "makeitgoth:block/steel_bars_post"
       },
       "when": {
@@ -106,6 +101,11 @@
     },
     {
       "apply": {
+        "model": "makeitgoth:block/steel_bars_post_ends"
+      }
+    },
+    {
+      "apply": {
         "model": "makeitgoth:block/steel_bars_post_spikes"
       },
       "when": {
@@ -201,6 +201,11 @@
       "when": {
         "spikes": "true",
         "west": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "makeitgoth:block/steel_bars_post_ends_spikes"
       }
     }
   ]

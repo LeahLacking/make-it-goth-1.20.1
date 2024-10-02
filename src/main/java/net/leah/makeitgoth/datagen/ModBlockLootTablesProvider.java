@@ -28,7 +28,7 @@ public class ModBlockLootTablesProvider extends FabricBlockLootTableProvider {
         //steel
         addDrop(ModBlocks.STEEL_BLOCK);
         addDrop(ModBlocks.STEEL_GRATE);
-        addDrop(ModBlocks.TEST_BARS);
+        addDrop(ModBlocks.STEEL_BARS);
         //rotwood
         addDrop(ModBlocks.ROTWOOD_LOG);
         addDrop(ModBlocks.ROTWOOD_PLANKS);

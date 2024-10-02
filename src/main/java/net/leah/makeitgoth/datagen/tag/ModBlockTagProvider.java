@@ -29,7 +29,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                         GOTHSTONE_WALL,
                         GOTHSTONE_BRICK_BUTTON,
                         STEEL_BLOCK,
-                        TEST_BARS,
+                        STEEL_BARS,
                         STEEL_GRATE
 
                 );
@@ -56,7 +56,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(
                         STEEL_BLOCK,
                         STEEL_GRATE,
-                        TEST_BARS
+                        STEEL_BARS
                 );
 
                getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)

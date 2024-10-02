@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/iron_bars_cap_alt",
+  "textures": {
+    "bars": "makeitgoth:block/steel_bars_spikes",
+    "edge": "makeitgoth:block/steel_bars",
+    "particle": "makeitgoth:block/steel_bars_spikes"
+  }
+}

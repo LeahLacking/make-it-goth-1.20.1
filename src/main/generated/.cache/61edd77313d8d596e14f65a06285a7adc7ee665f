@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-02T17:21:23.478971439	Make it Goth/Block Loot Tables
+// 1.21.1	2024-10-02T18:15:26.046686004	Make it Goth/Block Loot Tables
 e74f3174d88137987710e429396f2c756f145ba4 data/makeitgoth/loot_table/blocks/gothstone_stairs.json
 adf7bb48d42bc5672ec519e1cfacaedfbd45e50f data/makeitgoth/loot_table/blocks/rotwood_log.json
 754e5bfe37af42ffdaf4de35e1e4154a9c06a800 data/makeitgoth/loot_table/blocks/gothstone_brick_button.json

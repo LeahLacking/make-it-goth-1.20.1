@@ -19,12 +19,12 @@
   "block.makeitgoth.rotwood_button": "Rotwood Button",
   "block.makeitgoth.steel_block": "Steel Block",
   "block.makeitgoth.steel_grate": "Steel Grate",
-  "block.makeitgoth.test_bars": "Steel Bars",
+  "block.makeitgoth.steel_bars": "Steel Bars",
   "item.makeitgoth.steel_ingot": "Steel Ingot",
   "item.makeitgoth.wheel_saw": "Wheel Saw",
   "item.makeitgoth.rifle_halberd": "Rifle Halberd",
   "item.makeitgoth.rusted_scythe": "Rusted Scythe",
   "block.makeitgoth.empty_beer_cup": "Empty Beer Cup",
 
-  "itemgroup.makeitgoth": "MakeItGoth!"
+  "itemgroup.makeitgoth": "Make It Goth!"
 }
