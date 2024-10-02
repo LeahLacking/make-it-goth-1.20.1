@@ -17,18 +17,15 @@ import static net.leah.makeitgoth.MakeItGoth.id;
 
 public class ModItems {
     public static ArrayList<Item> creativeTabItems = new ArrayList<>();
-    
+
 
     public static final Item STEEL_INGOT = registerItem("steel_ingot",
-            // This is how you add food components to an item
-            new Item(new Item.Settings().food(ModFoodComponents.STEEL_INGOT)));
+            new Item(new Item.Settings()));
 
     public static final Item PUMPKIN_RUM_ITEM = registerItem("pumpkin_rum_item",
-            // This is how you add food components to an item
             new BlockItem(ModBlocks.PUMPKIN_RUM, new Item.Settings().food(ModFoodComponents.STEEL_INGOT)));
 
     public static final Item BEER_ITEM = registerItem("beer_item",
-            // This is how you add food components to an item
             new BlockItem(ModBlocks.BEER, new Item.Settings().food(ModFoodComponents.STEEL_INGOT)));
 
     public static final Item WHEEL_SAW = registerItem("wheel_saw", new ChipItem(
@@ -36,6 +33,7 @@ public class ModItems {
 
     public static final Item RUSTED_SCYTHE = registerItem("rusted_scythe", new BlindItem(
             ToolMaterials.NETHERITE, new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(ToolMaterials.NETHERITE, 2.5f, -2.1f))));
+
     public static final Item RIFLE_HALBERD = registerItem("rifle_halberd",
             new BleedItem(ToolMaterials.DIAMOND, new Item.Settings().attributeModifiers(BleedItem.createAttributeModifiers(ToolMaterials.DIAMOND, 2.5f, -3f))));
 
