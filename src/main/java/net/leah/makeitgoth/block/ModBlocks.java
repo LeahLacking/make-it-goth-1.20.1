@@ -53,13 +53,13 @@ public class ModBlocks {
 
     // steel related blocks
     public static final Block STEEL_BLOCK = registerBlock("steel_block",
-            new SteelBars(copySettings(Blocks.IRON_BLOCK)));
+            new Block(copySettings(Blocks.IRON_BLOCK)));
 
     public static final Block STEEL_GRATE = registerBlock("steel_grate",
             new Block(copySettings(STEEL_BLOCK).nonOpaque()));
 
     public static final Block STEEL_BARS = registerBlock("steel_bars",
-            new PaneBlock(copySettings(Blocks.IRON_BARS).nonOpaque()));
+            new SteelBars(copySettings(Blocks.IRON_BARS).nonOpaque()));
 
     // rotwood blocks
     public static final Block ROTWOOD_PLANKS = registerBlock("rotwood_planks",
@@ -119,7 +119,7 @@ public class ModBlocks {
     public static final Block GOTHSTONE_WALL = registerBlock("gothstone_wall",
             new WallBlock(copySettings(Blocks.STONE_BRICK_WALL)));
 
-    public static final Block TEST_BARS = registerBlock("test_bars", new SteelBars(copySettings(STEEL_BARS)));
+//    public static final Block TEST_BARS = registerBlock("test_bars", new SteelBars(copySettings(STEEL_BARS)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
