@@ -1,6 +1,5 @@
 package net.leah.makeitgoth.block;
 
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.leah.makeitgoth.MakeItGoth;
 import net.leah.makeitgoth.block.custom.BeerBrewingStand;
@@ -9,10 +8,12 @@ import net.leah.makeitgoth.block.custom.FogThingy;
 import net.leah.makeitgoth.block.custom.SteelBars;
 import net.leah.makeitgoth.item.ModItems;
 import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 
 import static net.leah.makeitgoth.MakeItGoth.id;
 
@@ -27,14 +28,20 @@ public class ModBlocks {
             new FogThingy(true, 5, copySettings(Blocks.IRON_BLOCK)));
 
 
-    public static final Block EMPTY_BEER_CUP = registerBlock("empty_beer_cup",
-            new EmptyBeerCup(copySettings(Blocks.LANTERN).nonOpaque()));
+    public static final Block EMPTY_BEER_CUP = registerBlock("empty_beer_cup", new EmptyBeerCup(
+            AbstractBlock.Settings.create()
+                    .strength(3.5F)
+                    .solid().nonOpaque()
+                    .mapColor(MapColor.SPRUCE_BROWN)
+                    .sounds(BlockSoundGroup.CHERRY_WOOD)
+                    .pistonBehavior(PistonBehavior.DESTROY)
+    ));
 
     public static final Block PUMPKIN_RUM = registerBlock("pumpkin_rum",
-            new EmptyBeerCup(copySettings(Blocks.LANTERN).nonOpaque()));
+            new EmptyBeerCup(copySettings(EMPTY_BEER_CUP)));
 
     public static final Block BEER = registerBlock("beer",
-            new EmptyBeerCup(copySettings(Blocks.LANTERN).nonOpaque()));
+            new EmptyBeerCup(copySettings(EMPTY_BEER_CUP)));
 
 
     //gothstone blocks
@@ -42,14 +49,14 @@ public class ModBlocks {
             new Block(copySettings(Blocks.STONE_BRICKS)));
 
     public static final Block GOTHSTONE = registerBlock("gothstone",
-            new Block(copySettings(Blocks.STONE_BRICKS)));
+            new Block(copySettings(Blocks.STONE)));
 
     // steel related blocks
     public static final Block STEEL_BLOCK = registerBlock("steel_block",
-            new Block(copySettings(Blocks.IRON_BLOCK)));
+            new SteelBars(copySettings(Blocks.IRON_BLOCK)));
 
     public static final Block STEEL_GRATE = registerBlock("steel_grate",
-            new Block(copySettings(Blocks.IRON_BLOCK).nonOpaque()));
+            new Block(copySettings(STEEL_BLOCK).nonOpaque()));
 
     public static final Block STEEL_BARS = registerBlock("steel_bars",
             new PaneBlock(copySettings(Blocks.IRON_BARS).nonOpaque()));
@@ -111,6 +118,7 @@ public class ModBlocks {
 
     public static final Block GOTHSTONE_WALL = registerBlock("gothstone_wall",
             new WallBlock(copySettings(Blocks.STONE_BRICK_WALL)));
+
     public static final Block TEST_BARS = registerBlock("test_bars", new SteelBars(copySettings(STEEL_BARS)));
 
     private static Block registerBlock(String name, Block block) {
@@ -129,7 +137,7 @@ public class ModBlocks {
     public static void registerModBlock() {
         MakeItGoth.printDev("Registering ModBlocks for " + MakeItGoth.MOD_ID);
 
-        //this is how to do block stripping
+        //(ender) This is how to do block stripping
         StrippableBlockRegistry.register(ROTWOOD_LOG, STRIPPED_ROTWOOD_LOG);
         StrippableBlockRegistry.register(ROTWOOD_WOOD, STRIPPED_ROTWOOD_WOOD);
     }
