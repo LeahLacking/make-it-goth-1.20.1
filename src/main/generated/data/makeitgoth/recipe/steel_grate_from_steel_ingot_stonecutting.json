@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "makeitgoth:steel_ingot"
+  },
+  "result": {
+    "count": 4,
+    "id": "makeitgoth:steel_grate"
+  }
+}
