@@ -127,7 +127,7 @@ public class ModBlocks {
     }
 
     public static void registerModBlock() {
-        MakeItGoth.LOGGER.info("Registering ModBlocks for " + MakeItGoth.MOD_ID);
+        MakeItGoth.printDev("Registering ModBlocks for " + MakeItGoth.MOD_ID);
 
         //this is how to do block stripping
         StrippableBlockRegistry.register(ROTWOOD_LOG, STRIPPED_ROTWOOD_LOG);

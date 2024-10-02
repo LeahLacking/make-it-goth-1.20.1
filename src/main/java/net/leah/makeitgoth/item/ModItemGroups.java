@@ -48,6 +48,6 @@ public class ModItemGroups {
                     }).build());
 
     public static void registerItemGroups() {
-        MakeItGoth.LOGGER.info("Registering ItemGroups for "+MakeItGoth.MOD_ID);
+        MakeItGoth.printDev("Registering ItemGroups for "+MakeItGoth.MOD_ID);
     }
 }

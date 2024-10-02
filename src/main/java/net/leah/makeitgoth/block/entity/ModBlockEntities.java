@@ -20,6 +20,6 @@ public class ModBlockEntities {
                             ModBlocks.BeerBrewingStandBlock).build());
 
     public static void registerBlockEntities() {
-        MakeItGoth.LOGGER.info("Registering Block Entities for " + MakeItGoth.MOD_ID);
+        MakeItGoth.printDev("Registering Block Entities for " + MakeItGoth.MOD_ID);
     }
 }

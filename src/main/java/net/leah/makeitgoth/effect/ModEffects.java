@@ -21,6 +21,6 @@ public class ModEffects {
     }
 
     public static void registerModEffects() {
-        MakeItGoth.LOGGER.info("Registering ModEffects for" + MakeItGoth.MOD_ID);
+        MakeItGoth.printDev("Registering ModEffects for" + MakeItGoth.MOD_ID);
     }
 }

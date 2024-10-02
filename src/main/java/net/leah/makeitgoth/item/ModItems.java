@@ -51,7 +51,7 @@ public class ModItems {
     }
 
     public static void registerModItems() {
-        MakeItGoth.LOGGER.info("Registering ModItems for" + MakeItGoth.MOD_ID);
+        MakeItGoth.printDev("Registering ModItems for" + MakeItGoth.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(ModItems::addItemsToIngredientItemGroup);
     }
