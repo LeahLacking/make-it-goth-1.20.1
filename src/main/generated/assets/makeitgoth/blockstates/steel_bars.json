@@ -2,12 +2,12 @@
   "multipart": [
     {
       "apply": {
-        "model": "makeitgoth:block/test_bars_post_ends"
+        "model": "makeitgoth:block/steel_bars_post_ends"
       }
     },
     {
       "apply": {
-        "model": "makeitgoth:block/test_bars_post"
+        "model": "makeitgoth:block/steel_bars_post"
       },
       "when": {
         "east": "false",
@@ -18,7 +18,7 @@
     },
     {
       "apply": {
-        "model": "makeitgoth:block/test_bars_cap"
+        "model": "makeitgoth:block/steel_bars_cap"
       },
       "when": {
         "east": "false",
@@ -30,7 +30,7 @@
     },
     {
       "apply": {
-        "model": "makeitgoth:block/test_bars_cap",
+        "model": "makeitgoth:block/steel_bars_cap",
         "y": 90
       },
       "when": {
@@ -43,7 +43,7 @@
     },
     {
       "apply": {
-        "model": "makeitgoth:block/test_bars_cap_alt"
+        "model": "makeitgoth:block/steel_bars_cap_alt"
       },
       "when": {
         "east": "false",
@@ -55,7 +55,7 @@
     },
     {
       "apply": {
-        "model": "makeitgoth:block/test_bars_cap_alt",
+        "model": "makeitgoth:block/steel_bars_cap_alt",
         "y": 90
       },
       "when": {
@@ -68,7 +68,7 @@
     },
     {
       "apply": {
-        "model": "makeitgoth:block/test_bars_side"
+        "model": "makeitgoth:block/steel_bars_side"
       },
       "when": {
         "north": "true",
@@ -77,7 +77,7 @@
     },
     {
       "apply": {
-        "model": "makeitgoth:block/test_bars_side",
+        "model": "makeitgoth:block/steel_bars_side",
         "y": 90
       },
       "when": {
@@ -87,7 +87,7 @@
     },
     {
       "apply": {
-        "model": "makeitgoth:block/test_bars_side_alt"
+        "model": "makeitgoth:block/steel_bars_side_alt"
       },
       "when": {
         "south": "true",
@@ -96,7 +96,7 @@
     },
     {
       "apply": {
-        "model": "makeitgoth:block/test_bars_side_alt",
+        "model": "makeitgoth:block/steel_bars_side_alt",
         "y": 90
       },
       "when": {
@@ -106,7 +106,7 @@
     },
     {
       "apply": {
-        "model": "makeitgoth:block/test_bars_post_spikes"
+        "model": "makeitgoth:block/steel_bars_post_spikes"
       },
       "when": {
         "east": "false",
@@ -117,7 +117,7 @@
     },
     {
       "apply": {
-        "model": "makeitgoth:block/test_bars_cap_spikes"
+        "model": "makeitgoth:block/steel_bars_cap_spikes"
       },
       "when": {
         "east": "false",
@@ -129,7 +129,7 @@
     },
     {
       "apply": {
-        "model": "makeitgoth:block/test_bars_cap_spikes",
+        "model": "makeitgoth:block/steel_bars_cap_spikes",
         "y": 90
       },
       "when": {
@@ -142,7 +142,7 @@
     },
     {
       "apply": {
-        "model": "makeitgoth:block/test_bars_cap_alt_spikes"
+        "model": "makeitgoth:block/steel_bars_cap_alt_spikes"
       },
       "when": {
         "east": "false",
@@ -154,7 +154,7 @@
     },
     {
       "apply": {
-        "model": "makeitgoth:block/test_bars_cap_alt_spikes",
+        "model": "makeitgoth:block/steel_bars_cap_alt_spikes",
         "y": 90
       },
       "when": {
@@ -167,7 +167,7 @@
     },
     {
       "apply": {
-        "model": "makeitgoth:block/test_bars_side_spikes"
+        "model": "makeitgoth:block/steel_bars_side_spikes"
       },
       "when": {
         "north": "true",
@@ -176,7 +176,7 @@
     },
     {
       "apply": {
-        "model": "makeitgoth:block/test_bars_side_spikes",
+        "model": "makeitgoth:block/steel_bars_side_spikes",
         "y": 90
       },
       "when": {
@@ -186,7 +186,7 @@
     },
     {
       "apply": {
-        "model": "makeitgoth:block/test_bars_side_alt_spikes"
+        "model": "makeitgoth:block/steel_bars_side_alt_spikes"
       },
       "when": {
         "south": "true",
@@ -195,7 +195,7 @@
     },
     {
       "apply": {
-        "model": "makeitgoth:block/test_bars_side_alt_spikes",
+        "model": "makeitgoth:block/steel_bars_side_alt_spikes",
         "y": 90
       },
       "when": {

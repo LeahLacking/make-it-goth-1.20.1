@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_steel_ingot": {
+    "has_gothstone": {
       "conditions": {
         "items": [
           {
-            "items": "makeitgoth:steel_ingot"
+            "items": "makeitgoth:gothstone"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:steel_block"
+        "recipe": "minecraft:gothstone_stairs_from_gothstone_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_steel_ingot"
+      "has_gothstone"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:steel_block"
+      "minecraft:gothstone_stairs_from_gothstone_stonecutting"
     ]
   }
 }

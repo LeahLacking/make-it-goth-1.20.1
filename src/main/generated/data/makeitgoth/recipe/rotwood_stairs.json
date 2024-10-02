@@ -7,12 +7,12 @@
     }
   },
   "pattern": [
-    "  x",
-    " xx",
+    "x  ",
+    "xx ",
     "xxx"
   ],
   "result": {
-    "count": 6,
+    "count": 4,
     "id": "makeitgoth:rotwood_stairs"
   }
 }

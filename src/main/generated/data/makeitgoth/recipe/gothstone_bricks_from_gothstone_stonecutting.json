@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "makeitgoth:gothstone"
+  },
+  "result": {
+    "count": 1,
+    "id": "makeitgoth:gothstone_bricks"
+  }
+}

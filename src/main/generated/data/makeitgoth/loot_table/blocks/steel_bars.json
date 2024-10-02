@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "makeitgoth:test_bars"
+          "name": "makeitgoth:steel_bars"
         }
       ],
       "rolls": 1.0

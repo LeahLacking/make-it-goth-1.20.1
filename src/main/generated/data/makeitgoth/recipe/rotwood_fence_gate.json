@@ -10,12 +10,11 @@
     }
   },
   "pattern": [
-    "   ",
     "sxs",
     "sxs"
   ],
   "result": {
-    "count": 3,
+    "count": 1,
     "id": "makeitgoth:rotwood_fence_gate"
   }
 }

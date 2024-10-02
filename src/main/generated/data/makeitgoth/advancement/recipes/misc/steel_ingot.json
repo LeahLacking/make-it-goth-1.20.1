@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_steel_ingot": {
+    "has_steel_block": {
       "conditions": {
         "items": [
           {
-            "items": "makeitgoth:steel_ingot"
+            "items": "makeitgoth:steel_block"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:steel_block"
+        "recipe": "minecraft:steel_ingot"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_steel_ingot"
+      "has_steel_block"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:steel_block"
+      "minecraft:steel_ingot"
     ]
   }
 }
