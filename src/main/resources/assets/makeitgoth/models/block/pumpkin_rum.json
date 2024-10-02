@@ -4,7 +4,7 @@
 	"texture_size": [64, 64],
 	"textures": {
 		"0": "makeitgoth:block/pumpkin_rum",
-		"particle": "makeitgoth:block/pumpkin_rum"
+		"particle": "minecraft:block/spruce_planks"
 	},
 	"elements": [
 		{
