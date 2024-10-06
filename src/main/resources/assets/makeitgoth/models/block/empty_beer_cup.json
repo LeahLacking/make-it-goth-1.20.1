@@ -4,7 +4,7 @@
 	"texture_size": [64, 64],
 	"textures": {
 		"0": "makeitgoth:block/empty_beer_cup",
-		"particle": "makeitgoth:block/empty_beer_cup"
+		"particle": "minecraft:block/spruce_planks"
 
 	},
 	"elements": [

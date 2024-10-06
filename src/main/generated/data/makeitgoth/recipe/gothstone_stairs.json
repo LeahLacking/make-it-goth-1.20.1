@@ -2,20 +2,17 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "s": {
-      "item": "minecraft:cobblestone"
-    },
-    "t": {
-      "item": "minecraft:tuff"
+    "x": {
+      "item": "makeitgoth:gothstone"
     }
   },
   "pattern": [
-    "   ",
-    " ts",
-    " st"
+    "x  ",
+    "xx ",
+    "xxx"
   ],
   "result": {
-    "count": 8,
+    "count": 4,
     "id": "makeitgoth:gothstone_stairs"
   }
 }

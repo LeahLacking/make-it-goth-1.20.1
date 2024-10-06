@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_gothstone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "makeitgoth:gothstone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:gothstone_bricks_from_gothstone_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_gothstone"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:gothstone_bricks_from_gothstone_stonecutting"
+    ]
+  }
+}

@@ -24,33 +24,25 @@ import static net.leah.makeitgoth.data.ModFeatures.GOTHSTONE_ORE_CONFIGURED;
 
 public class ModFeatureCreator {
     public static void bootstrapConfigured(Registerable<ConfiguredFeature<?, ?>> context) {
-        context.register(
-                GOTHSTONE_ORE_CONFIGURED,
-                new ConfiguredFeature<>(
-                        Feature.ORE,
-                        new OreFeatureConfig(
-                                new TagMatchRuleTest(BlockTags.BASE_STONE_OVERWORLD),
-                                ModBlocks.GOTHSTONE.getDefaultState(),
-                                64
-                        )
-                )
-        );
+        context.register(GOTHSTONE_ORE_CONFIGURED, new ConfiguredFeature<>(
+                Feature.ORE,
+                new OreFeatureConfig(
+                        new TagMatchRuleTest(BlockTags.BASE_STONE_OVERWORLD),
+                        ModBlocks.GOTHSTONE.getDefaultState(),
+                        64
+                )));
     }
 
     public static void bootstrapPlaced(Registerable<PlacedFeature> context) {
-        RegistryEntryLookup<ConfiguredFeature<?, ?>> configuredReg = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
-        RegistryEntry.Reference<ConfiguredFeature<?, ?>> gothstone = configuredReg.getOrThrow(GOTHSTONE_ORE_CONFIGURED);
-        context.register(
-                GOTHSTONE_ORE,
-                new PlacedFeature(
-                        gothstone,
-                        List.of(
-                                CountPlacementModifier.of(2),
-                                SquarePlacementModifier.of(),
-                                HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(0)),
-                                BiomePlacementModifier.of()
-                        )
-                )
-        );
+        var configuredReg = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
+        var gothstone = configuredReg.getOrThrow(GOTHSTONE_ORE_CONFIGURED);
+        context.register(GOTHSTONE_ORE, new PlacedFeature(
+                gothstone,
+                List.of(
+                        CountPlacementModifier.of(2),
+                        SquarePlacementModifier.of(),
+                        HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(0)),
+                        BiomePlacementModifier.of()
+                )));
     }
 }

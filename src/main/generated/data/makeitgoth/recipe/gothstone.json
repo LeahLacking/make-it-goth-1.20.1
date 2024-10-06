@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "d": {
+      "item": "minecraft:cobbled_deepslate"
+    },
+    "t": {
+      "item": "minecraft:tuff"
+    }
+  },
+  "pattern": [
+    "td",
+    "dt"
+  ],
+  "result": {
+    "count": 4,
+    "id": "makeitgoth:gothstone"
+  }
+}

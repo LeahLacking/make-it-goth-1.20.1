@@ -7,12 +7,10 @@
     }
   },
   "pattern": [
-    "   ",
-    "   ",
-    " xx"
+    "xx"
   ],
   "result": {
-    "count": 2,
+    "count": 1,
     "id": "makeitgoth:rotwood_pressure_plate"
   }
 }

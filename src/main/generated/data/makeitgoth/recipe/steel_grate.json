@@ -3,16 +3,16 @@
   "category": "building",
   "key": {
     "x": {
-      "item": "makeitgoth:steel_ingot"
+      "item": "makeitgoth:steel_block"
     }
   },
   "pattern": [
-    "  ",
-    "xx",
-    "xx"
+    " x ",
+    "x x",
+    " x "
   ],
   "result": {
-    "count": 6,
+    "count": 4,
     "id": "makeitgoth:steel_grate"
   }
 }

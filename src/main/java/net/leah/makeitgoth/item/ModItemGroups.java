@@ -23,7 +23,7 @@ public class ModItemGroups {
                         entries.add(ModItems.STEEL_INGOT);
                         entries.add(ModBlocks.STEEL_BLOCK);
                         entries.add(ModBlocks.STEEL_GRATE);
-                        entries.add(ModBlocks.TEST_BARS);
+                        entries.add(ModBlocks.STEEL_BARS);
                         entries.add(ModBlocks.GOTHSTONE);
                         entries.add(ModBlocks.GOTHSTONE_SLAB);
                         entries.add(ModBlocks.GOTHSTONE_STAIRS);
@@ -48,6 +48,6 @@ public class ModItemGroups {
                     }).build());
 
     public static void registerItemGroups() {
-        MakeItGoth.LOGGER.info("Registering ItemGroups for "+MakeItGoth.MOD_ID);
+        MakeItGoth.printDev("Registering ItemGroups for "+MakeItGoth.MOD_ID);
     }
 }

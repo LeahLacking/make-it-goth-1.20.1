@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "makeitgoth:steel_block"
+        "recipe": "minecraft:steel_block"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "makeitgoth:steel_block"
+      "minecraft:steel_block"
     ]
   }
 }
