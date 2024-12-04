@@ -13,7 +13,7 @@ import static net.leah.makeitgoth.MakeItGoth.id;
 public class ModEffects {
 
     public final static RegistryEntry.Reference<StatusEffect> BLEED = registerModEffect("bleed",
-            new BleedEffect(StatusEffectCategory.HARMFUL, 4718584)
+            new BleedEffect(StatusEffectCategory.HARMFUL, 11101546)
     );
 
     public static RegistryEntry.Reference<StatusEffect> registerModEffect(String name, StatusEffect entry) {
